@@ -11,7 +11,7 @@ calculator.addEventListener('click', e =>{
     var result = document.getElementById('result')
     var calculate = 0
 
-    console.log(eClss)
+    console.log(eId)
 
     //number display
     if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numbD" ) {
@@ -28,7 +28,15 @@ calculator.addEventListener('click', e =>{
     }
 
     //back
-    if(eId ==='back'){
-        result.innerHTML=""
+    if(eId ==='back' || eId ==='backSVG'){
+        if( result.innerText.length== 1 || result.innerText==='0'){
+            result.innerText=0
+        }else{
+        result.innerText=result.innerText.slice(0, -1)
+        }}
+    //dot
+        if(result.innerText.includes(".")){
+        result.innerText=result.innerText.slice(0, -1)
         }
+    
 })
