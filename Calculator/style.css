@@ -12,6 +12,14 @@ body {
     font-family: 'Geologica', sans-serif;
     
 }
+.toggle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
+    background:#ffffff;
+}
 .Calculator{
     width: 300px;
     height: 600px;
@@ -20,7 +28,7 @@ body {
     margin: auto;
     margin-top: 150px;
     box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
-    padding: 35px 30px 35px 30px;
+    padding: 20px 30px 35px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,4 +130,13 @@ body {
     font-size: 40px;
     line-height: 70px;
     max-width: 240px;
+}
+
+
+    /* white theme */
+.CalculatorW{
+    background: #f7f8f8;
+}
+.buuttnW{
+    background: #ffffff;
 }

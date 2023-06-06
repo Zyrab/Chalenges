@@ -9,6 +9,9 @@ calculator.addEventListener('click', e =>{
     var eClss = e.target.className
     var eValue = e.target.innerText
     var result = document.getElementById('result')
+    var input = document.getElementById('input')
+    var calculatorId = document.getElementById('calculatorId')
+    
     var calculate = 0
 
     console.log(eId)
@@ -34,9 +37,29 @@ calculator.addEventListener('click', e =>{
         }else{
         result.innerText=result.innerText.slice(0, -1)
         }}
+
     //dot
-        if(result.innerText.includes(".")){
+    if(result.innerText.includes(".")){
         result.innerText=result.innerText
-        }
+     }
+
+    //making signs work
+    if( eClss==='nav2' || eClss ==='sign' || eClss === 'signP'){
+        input.innerText=result.innerText+eValue
+    }
+
+    //theme toggle
+    if(eId === 'toggle'){
+        calculatorId.classList.add('CalculatorW')
+        eId = 'toggle1'
+    }
+    
+    // if(eId === 'toggle1'){
+    //     eId = 'toggle'
+    //     calculatorId.classList.remove('CalculatorW')
+    // }
     
 })
+
+
+    
