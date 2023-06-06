@@ -36,7 +36,7 @@ calculator.addEventListener('click', e =>{
         }}
     //dot
         if(result.innerText.includes(".")){
-        result.innerText=result.innerText.slice(0, -1)
+        result.innerText=result.innerText
         }
     
 })

@@ -63,9 +63,9 @@ body {
     color:#29A8FF ;
 }
 .nav1, .nav2, .numb, .sign, .signE, .numb0,.numbD ,.signP{
-  width: 50px;
-  height: 50px;
-  border-radius: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
 }
 .nav1{
     background:  #616161 ;
@@ -89,6 +89,7 @@ body {
 }
 .signE{
     background: #1991FF;
+    color: #B2DAFF;
     height:80px ;
 }
 .signP{
@@ -120,4 +121,5 @@ body {
     color: #ffffff;
     font-size: 40px;
     line-height: 70px;
+    max-width: 240px;
 }
