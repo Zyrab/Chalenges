@@ -11,9 +11,10 @@ calculator.addEventListener('click', e =>{
     var result = document.getElementById('result')
     var input = document.getElementById('input')
     var calculatorId = document.getElementById('calculatorId')
-    var calcElements = calculatorId.querySelectorAll('DIV')
+    var calcElements = calculatorId.querySelectorAll('DIV , BUTTON , SVG')
     var calculate = 0
 
+    
 
     //number display
     if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numbD" ||
@@ -51,8 +52,6 @@ calculator.addEventListener('click', e =>{
     //theme toggle
     if(eId === 'toggle'){
         selectNodesToChangeCSS( );
-     
-        console.log(eClss, calculatorId.className)
     }
     
     //element selector to change css propertys
@@ -81,24 +80,29 @@ calculator.addEventListener('click', e =>{
             //result screen
             if (node.className === 'result' ){
                 node.classList.add('resultW') 
+                
             } else {
                 node.classList.remove('resultW')      
             }
+
             if (calculatorId.className === 'Calculator' ){
-                calculatorId.classList.add('CalculatorW')
-                
+                calculatorId.classList.add('CalculatorW') 
             } else {
                 calculatorId.classList.remove('CalculatorW')  
             }
-         
+            
             //toggle button
-            if (node.className === 'toggleW' ){
-                node.classList.add('toggleB') 
-                node.classList.remove('toggleW')      
-            } 
-            if (node.className === 'toggleB' ){
-                node.classList.add('toggleW') 
-                node.classList.remove('toggleB')      
+            if (node.className === 'toggleW'){
+                node.classList.add('toggleB')     
+            } else {
+                node.classList.remove('toggleB')
+            }
+            //toggle button
+            if (node.id=== 'history'){
+                node.classList.add('historyW')     
+                console.log(node.className) 
+            } else {
+                node.classList.remove('historyW')
             }
 
         }     
