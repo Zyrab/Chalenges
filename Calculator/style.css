@@ -12,13 +12,21 @@ body {
     font-family: 'Geologica', sans-serif;
     
 }
-.toggle{
+.toggleW{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     border: none;
     box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
     background:#ffffff;
+}
+.toggleB{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
+    background:linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
 }
 .Calculator{
     width: 300px;
@@ -137,6 +145,6 @@ body {
 .CalculatorW{
     background: #f7f8f8;
 }
-.buuttnW{
+.Whitetheme{
     background: #ffffff;
 }

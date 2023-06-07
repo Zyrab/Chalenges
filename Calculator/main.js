@@ -11,7 +11,6 @@ calculator.addEventListener('click', e =>{
     var result = document.getElementById('result')
     var input = document.getElementById('input')
     var calculatorId = document.getElementById('calculatorId')
-    
     var calculate = 0
 
     console.log(eId)
@@ -39,7 +38,7 @@ calculator.addEventListener('click', e =>{
         }}
 
     //dot
-    if(result.innerText.includes(".")){
+    if(result.innerText.includes(".")){ 
         result.innerText=result.innerText
      }
 
@@ -50,14 +49,17 @@ calculator.addEventListener('click', e =>{
 
     //theme toggle
     if(eId === 'toggle'){
-        calculatorId.classList.add('CalculatorW')
-        eId = 'toggle1'
+        if(eClss === 'toggleW'){
+            calculatorId.classList.add('CalculatorW')
+            eT.classList.add('toggleB')
+            eT.classList.remove('toggleW')
+        }
+        if(eClss === 'toggleB'){
+            calculatorId.classList.remove('CalculatorW')
+            eT.classList.add('toggleW')
+            eT.classList.remove('toggleB')
+        }
     }
-    
-    // if(eId === 'toggle1'){
-    //     eId = 'toggle'
-    //     calculatorId.classList.remove('CalculatorW')
-    // }
     
 })
 
