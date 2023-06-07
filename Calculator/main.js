@@ -77,7 +77,7 @@ calculator.addEventListener('click', e =>{
             } else {
                 node.classList.remove('buttonEqual')      
             }
-            //result screen
+            //result screens
             if (node.className === 'result' ){
                 node.classList.add('resultW') 
                 
