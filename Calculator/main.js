@@ -11,12 +11,13 @@ calculator.addEventListener('click', e =>{
     var result = document.getElementById('result')
     var input = document.getElementById('input')
     var calculatorId = document.getElementById('calculatorId')
+    var calcElements = calculatorId.querySelectorAll('DIV')
     var calculate = 0
 
-    console.log(eId)
 
     //number display
-    if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numbD" ) {
+    if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numbD" ||
+    eClss ==="numb Whitetheme" || eClss ==="numb0 Whitetheme" || eClss ==="numbD Whitetheme") {
         if(result.innerText === '0' && eValue!=='.'){
             result.innerText=""+eValue
         }else{
@@ -43,24 +44,66 @@ calculator.addEventListener('click', e =>{
      }
 
     //making signs work
-    if( eClss==='nav2' || eClss ==='sign' || eClss === 'signP'){
-        input.innerText=result.innerText+eValue
-    }
+    // if( eClss==='nav2' || 'sign' || 'signP'){
+    //     input.innerText=result.innerText+eValue
+    // }
 
     //theme toggle
     if(eId === 'toggle'){
-        if(eClss === 'toggleW'){
-            calculatorId.classList.add('CalculatorW')
-            eT.classList.add('toggleB')
-            eT.classList.remove('toggleW')
-        }
-        if(eClss === 'toggleB'){
-            calculatorId.classList.remove('CalculatorW')
-            eT.classList.add('toggleW')
-            eT.classList.remove('toggleB')
-        }
+        selectNodesToChangeCSS( );
+     
+        console.log(eClss, calculatorId.className)
     }
     
+    //element selector to change css propertys
+    function selectNodesToChangeCSS() {
+        for (i = 0 ; i < calcElements.length; i++) {
+            node = calcElements.item(i)
+            //white buttons
+            if (node.className === 'funct' || node.className ==='numb' || node.className ==='numb0' ||
+            node.className === 'numbD' || node.className ==='nav1'){
+                node.classList.add('Whitetheme') 
+            } else {
+                node.classList.remove('Whitetheme')      
+            }
+            //blue buttons
+            if (node.className === 'nav2' || node.className ==='sign' || node.className ==='signP'){
+                node.classList.add('bluebutton') 
+            } else {
+                node.classList.remove('bluebutton')      
+            }
+            //equals button
+            if (node.className === 'signE' ){
+                node.classList.add('buttonEqual') 
+            } else {
+                node.classList.remove('buttonEqual')      
+            }
+            //result screen
+            if (node.className === 'result' ){
+                node.classList.add('resultW') 
+            } else {
+                node.classList.remove('resultW')      
+            }
+            if (calculatorId.className === 'Calculator' ){
+                calculatorId.classList.add('CalculatorW')
+                
+            } else {
+                calculatorId.classList.remove('CalculatorW')  
+            }
+         
+            //toggle button
+            if (node.className === 'toggleW' ){
+                node.classList.add('toggleB') 
+                node.classList.remove('toggleW')      
+            } 
+            if (node.className === 'toggleB' ){
+                node.classList.add('toggleW') 
+                node.classList.remove('toggleB')      
+            }
+
+        }     
+    }
+
 })
 
 

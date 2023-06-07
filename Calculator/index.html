@@ -17,7 +17,11 @@
             <div class="Calculator" id="calculatorId">
                 <div class="top">
                     <button class="toggleW" id="toggle"></button>
-                    <!-- <button class="toggleB" id="toggleB"></button> -->
+                    <div class="historyDiv">
+                        <svg height="30" class="history" viewBox="0 0 1792 1792" width="30" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1664 896q0 156-61 298t-164 245-245 164-298 61q-172 0-327-72.5t-264-204.5q-7-10-6.5-22.5t8.5-20.5l137-138q10-9 25-9 16 2 23 12 73 95 179 147t225 52q104 0 198.5-40.5t163.5-109.5 109.5-163.5 40.5-198.5-40.5-198.5-109.5-163.5-163.5-109.5-198.5-40.5q-98 0-188 35.5t-160 101.5l137 138q31 30 14 69-17 40-59 40h-448q-26 0-45-19t-19-45v-448q0-42 40-59 39-17 69 14l130 129q107-101 244.5-156.5t284.5-55.5q156 0 298 61t245 164 164 245 61 298zm-640-288v448q0 14-9 23t-23 9h-320q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224v-352q0-14 9-23t23-9h64q14 0 23 9t9 23z"/>
+                        </svg>
+                    </div>
                 </div>
                 <div class="screen">
                     <div class="input">
@@ -29,10 +33,10 @@
                 </div>
                 <div class="keyboard">
                     <div class="functions">
-                        <div class="funct"><p>%</p></div>
-                        <div class="funct"><p>√</p></div>
-                        <div class="funct"><p>x²</p></div>
-                        <div class="funct"><p>π</p></div>
+                        <div class="funct" id="perc">%</div>
+                        <div class="funct" id="sqroot">√</div>
+                        <div class="funct" id="sqr">x²</div>
+                        <div class="funct" id="pe">π</div>
                     </div>
                     <div class="navigation">
                         <div class="nav1" id="Ac">Ac</div>
@@ -40,8 +44,8 @@
                             <path class="backSVG" d="M6.53481 1.11994e-08H20.9998C21.265 1.11994e-08 21.5194 0.105357 21.7069 0.292893C21.8945 0.48043 21.9998 0.734784 21.9998 1V17C21.9998 17.2652 21.8945 17.5196 21.7069 17.7071C21.5194 17.8946 21.265 18 20.9998 18H6.53481C6.37022 18 6.20816 17.9594 6.06303 17.8818C5.91789 17.8042 5.79416 17.6919 5.70281 17.555L0.36981 9.555C0.260171 9.39067 0.20166 9.19755 0.20166 9C0.20166 8.80245 0.260171 8.60933 0.36981 8.445L5.70281 0.445C5.79416 0.308084 5.91789 0.195832 6.06303 0.118205C6.20816 0.0405779 6.37022 -2.46193e-05 6.53481 1.11994e-08ZM7.06981 2L2.40381 9L7.06981 16H19.9998V2H7.06981ZM12.9998 7.586L15.8278 4.757L17.2428 6.172L14.4138 9L17.2428 11.828L15.8278 13.243L12.9998 10.414L10.1718 13.243L8.75681 11.828L11.5858 9L8.75681 6.172L10.1718 4.757L12.9998 7.586Z" fill="#A5A5A5"/>
                             </svg>
                         </div>
-                        <div class="nav2">/</div>
-                        <div class="nav2">*</div>
+                        <div class="nav2" id="division">/</div>
+                        <div class="nav2" id="multiplier">*</div>
                     </div>
                     <div class="container1">
                         <div class="digits">
@@ -58,9 +62,9 @@
                             <div class="numbD" id="D">.</div>
                         </div>
                         <div class="signs">
-                            <div class="sign"><p>-</p></div>
-                            <div class="signP"><p>+</p></div>
-                            <div class="signE"><p>=</p></div>
+                            <div class="sign" id="minus">-</div>
+                            <div class="signP"  id="plus">+</div>
+                            <div class="signE"  id="equal">=</div>
                         </div>
                     </div>
                 </div>

@@ -12,21 +12,47 @@ body {
     font-family: 'Geologica', sans-serif;
     
 }
+.top{
+    display: flex;
+    justify-content: space-between;
+}
 .toggleW{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     border: none;
-    box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
+    box-shadow:-8px 11px 21px rgba(0, 107, 181, 0.63);
     background:#ffffff;
+    transition: background-color 2s ease-out;
 }
 .toggleB{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     border: none;
-    box-shadow:80px 50px 70px rgba(0, 107, 181, 0.63);
-    background:linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    box-shadow:-8px 11px 21px rgba(0, 107, 181, 0.63);
+    background: #17181A;
+    transition: background-color 2s ease;
+}
+
+.history{
+    border-radius: 100px;
+    box-shadow:8px 11px 21px rgba(0, 107, 181, 0.63);
+    fill: #ffffff;   
+}
+.history:hover{
+    transition: fill 2s ease-out;
+    fill: #3d3d3f;
+    cursor: pointer;
+}
+
+.toggleW:hover{
+    background-color: #3d3d3f;
+    cursor: pointer;
+}
+.toggleB:hover{
+    background-color: #ffffff;
+    cursor: pointer;
 }
 .Calculator{
     width: 300px;
@@ -91,13 +117,17 @@ body {
     background: #005DB2;
     color: #339DFF;
 }
+.nav2:hover , .sign:hover, .signP:hover , .signE:hover{
+    background: #29A8FF;
+    color: #005DB2;
+}
 .numb,.numb0, .numbD {
     background: #303136;
     color: #29A8FF;
 }
-.numb:hover,.numb0:hover, .numbD:hover {
+.numb:hover,.numb0:hover, .numbD:hover, .nav1:hover, .funct:hover{
     background: #3d3d3f;
-    color: #1e99eb;
+    color: #005DB2;
 }
 .signs{
     flex-direction: column;
@@ -116,6 +146,7 @@ body {
     margin-top: 10px;
 }
 .numbD{
+    z-index: 99;
     margin-top: 10px;
 }
 
@@ -147,4 +178,17 @@ body {
 }
 .Whitetheme{
     background: #ffffff;
+}
+.Whitetheme:hover{
+    background: #f7f8f8;
+}
+.bluebutton{
+    background: #ADE2FF;
+}
+.buttonEqual{
+    background: #19ACFF;
+    box-shadow: -8px 11px 21px rgba(0, 163, 255, 0.65), inset -3px 4px 11px #B0DFFF;
+}
+.resultW{
+    color:#424242; ;
 }
