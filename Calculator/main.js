@@ -93,18 +93,10 @@ calculator.addEventListener('click', e =>{
             
             //toggle button
             if (node.className === 'toggleW'){
-                node.classList.add('toggleB')     
+                node.classList.add('toggleB')    
             } else {
                 node.classList.remove('toggleB')
             }
-            //toggle button
-            if (node.id=== 'history'){
-                node.classList.add('historyW')     
-                console.log(node.className) 
-            } else {
-                node.classList.remove('historyW')
-            }
-
         }     
     }
 

@@ -17,8 +17,8 @@ body {
     justify-content: space-between;
 }
 .toggleW{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     border: none;
     box-shadow:-8px 11px 21px rgba(0, 107, 181, 0.63);
@@ -26,23 +26,26 @@ body {
     transition: background-color 2s ease-out;
 }
 .toggleB{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     border: none;
     box-shadow:-8px 11px 21px rgba(0, 107, 181, 0.63);
-    background: #17181A;
+    background: #3d3d3f;
     transition: background-color 2s ease;
 }
 
 .history{
+    width: 30px;
+    height: 30px;
     border-radius: 100px;
-    box-shadow:8px 11px 21px rgba(0, 107, 181, 0.63);
-    fill: #ffffff;   
+    /* box-shadow:10px 9px 15px rgba(0, 107, 181, 0.63);   */
+}
+.history img{
+    width: 100%;
 }
 .history:hover{
     transition: fill 2s ease-out;
-    fill: #3d3d3f;
     cursor: pointer;
 }
 
