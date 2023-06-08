@@ -15,45 +15,45 @@ calculator.addEventListener('click', e =>{
     var calculate = 0
 
     
-
-    //number display
-    if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numbD" ||
-    eClss ==="numb Whitetheme" || eClss ==="numb0 Whitetheme" || eClss ==="numbD Whitetheme") {
+//amking symbols and numbers work
+    //number display properly
+    if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numb Whitetheme" || eClss ==="numb0 Whitetheme") {
         if(result.innerText === '0' && eValue!=='.'){
             result.innerText=""+eValue
         }else{
             result.innerText+=eValue
         }
     }
-
     //restart
     if(eId ==='Ac'){
     result.innerText=0
     }
-
-    //back
+    //back to not erase 0
     if(eId ==='back' || eId ==='backSVG'){
         if( result.innerText.length== 1 || result.innerText==='0'){
             result.innerText=0
         }else{
         result.innerText=result.innerText.slice(0, -1)
         }}
-
-    //dot
-    if(result.innerText.includes(".")){ 
-        result.innerText=result.innerText
-     }
-
-    //making signs work
-    // if( eClss==='nav2' || 'sign' || 'signP'){
-    //     input.innerText=result.innerText+eValue
-    // }
-
+    //dot to not repeat
+    if(eClss ==="numbD" || eClss ==="numbD Whitetheme" ) {
+        if(result.innerText.includes(".")){ 
+            result.innerText+=''
+        }else{
+            result.innerText+='.'
+        }
+    }
     //theme toggle
     if(eId === 'toggle'){
         selectNodesToChangeCSS( );
     }
     
+//Functions
+
+    //calculation buttons 
+    function calculationButtons(elementid){
+        
+    }
     //element selector to change css propertys
     function selectNodesToChangeCSS() {
         for (i = 0 ; i < calcElements.length; i++) {
@@ -79,18 +79,15 @@ calculator.addEventListener('click', e =>{
             }
             //result screens
             if (node.className === 'result' ){
-                node.classList.add('resultW') 
-                
+                node.classList.add('resultW')     
             } else {
                 node.classList.remove('resultW')      
             }
-
             if (calculatorId.className === 'Calculator' ){
                 calculatorId.classList.add('CalculatorW') 
             } else {
                 calculatorId.classList.remove('CalculatorW')  
             }
-            
             //toggle button
             if (node.className === 'toggleW'){
                 node.classList.add('toggleB')    
