@@ -27,6 +27,7 @@ calculator.addEventListener('click', e =>{
     //restart
     if(eId ==='Ac'){
     result.innerText=0
+    input.innerText=''
     }
     //back to not erase 0
     if(eId ==='back' || eId ==='backSVG'){
