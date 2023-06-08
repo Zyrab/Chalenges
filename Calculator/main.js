@@ -47,12 +47,25 @@ calculator.addEventListener('click', e =>{
     if(eId === 'toggle'){
         selectNodesToChangeCSS( );
     }
+    calculationButtons(eId,eValue)
     
 //Functions
 
     //calculation buttons 
-    function calculationButtons(elementid){
-        
+    function calculationButtons(elementid , elementText){
+        if (elementid === 'minus' || elementid === 'plus' || elementid === 'division' || elementid === 'multiplier'){
+            var span = document.createElement('span');
+            span.textContent = elementText;
+            span.style.color = '#339DFF';
+
+            if( input.innerText ===''){
+                input.innerText=result.innerText
+                input.appendChild(span);
+            } else {
+                input.innerText+=result.innerText
+                input.appendChild(span);
+            }
+        }
     }
     //element selector to change css propertys
     function selectNodesToChangeCSS() {
