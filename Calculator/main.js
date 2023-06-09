@@ -1,6 +1,6 @@
 //variables
 const calculator = document.querySelector(".Calculator")
-
+var isEntered = false
 //eventlistener
 calculator.addEventListener('click', e =>{
     //variables
@@ -12,37 +12,47 @@ calculator.addEventListener('click', e =>{
     var input = document.getElementById('input')
     var calculatorId = document.getElementById('calculatorId')
     var calcElements = calculatorId.querySelectorAll('DIV , BUTTON , SVG')
+   
     var calculate = 0
 
-    
 //amking symbols and numbers work
     //number display properly
     if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numb Whitetheme" || eClss ==="numb0 Whitetheme") {
-        if(result.innerText === '0' && eValue!=='.'){
+        if(result.innerText === '0' && eValue!=='.' || isEntered===false){
             result.innerText=""+eValue
+            isEntered = true
         }else{
             result.innerText+=eValue
+            isEntered = true
         }
     }
     //restart
     if(eId ==='Ac'){
-    result.innerText=0
-    input.innerText=''
+        result.innerText=0
+        input.innerText=''
+        isEntered = false
     }
     //back to not erase 0
-    if(eId ==='back' || eId ==='backSVG'){
+    if((eId ==='back' || eId ==='backSVG')  && isEntered === true){
         if( result.innerText.length== 1 || result.innerText==='0'){
             result.innerText=0
         }else{
         result.innerText=result.innerText.slice(0, -1)
-        }}
+         }
+    }
     //dot to not repeat
     if(eClss ==="numbD" || eClss ==="numbD Whitetheme" ) {
+        if( isEntered === false && result.innerText !==0){
+            result.innerText='0.'
+            isEntered = true
+        }
         if(result.innerText.includes(".")){ 
             result.innerText+=''
         }else{
             result.innerText+='.'
+            isEntered = true
         }
+
     }
     //theme toggle
     if(eId === 'toggle'){
@@ -52,24 +62,8 @@ calculator.addEventListener('click', e =>{
     
 //Functions
 
-    //calculation buttons 
-    function calculationButtons(elementid , elementText){
-        if (elementid === 'minus' || elementid === 'plus' || elementid === 'division' || elementid === 'multiplier'){
-            var span = document.createElement('span');
-            span.textContent = elementText;
-            span.style.color = '#339DFF';
-
-            if( input.innerText ===''){
-                input.innerText=result.innerText
-                input.appendChild(span);
-            } else {
-                input.innerText+=result.innerText
-                input.appendChild(span);
-            }
-        }
-    }
-    //element selector to change css propertys
-    function selectNodesToChangeCSS() {
+//element selector to change css propertys
+function selectNodesToChangeCSS() {
         for (i = 0 ; i < calcElements.length; i++) {
             node = calcElements.item(i)
             //white buttons
@@ -111,7 +105,45 @@ calculator.addEventListener('click', e =>{
         }     
     }
 
+    // trim if .0 or .
+    function trimIfNeeded (){
+        if(result.innerText)
+    }
+    
+    //calculation buttons 
+    function calculationButtons(elementid , elementText){
+        if (elementid === 'minus' || elementid === 'plus' || elementid === 'division' || elementid === 'multiplier'){
+            var span = document.createElement('span');
+            span.textContent = elementText;
+            span.style.color = '#339DFF';
+            
+            if( input.innerText ===''){
+                input.innerText=result.innerText
+                input.appendChild(span)
+                isEntered = false
+                
+            }
+            if( isEntered === true){
+                input.innerText+=result.innerText
+                input.appendChild(span)
+                isEntered = false
+            }
+            if (isEntered ===false && input.innerText !==''){
+                input.innerText=input.innerText.slice(0, -1)
+                input.appendChild(span)
+            }
+
+            console.log(input.innerText)
+            //  else {
+            //     input.innerText+=result.innerText
+            //     input.appendChild(span);
+            // }
+        }
+    }
+
+    
+    console.log(isEntered)
+
 })
 
 
-    
