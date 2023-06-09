@@ -1,5 +1,6 @@
 //variables
 const calculator = document.querySelector(".Calculator")
+const historyArr = []
 var isEntered = false
 //eventlistener
 calculator.addEventListener('click', e =>{
@@ -58,8 +59,21 @@ calculator.addEventListener('click', e =>{
     if(eId === 'toggle'){
         selectNodesToChangeCSS( );
     }
-    calculationButtons(eId,eValue)
-    
+    // + - / *
+    if (eId === 'minus' || eId === 'plus' || eId === 'division' || eId === 'multiplier'){
+    calculationButtons(eValue)
+    } 
+    // sqr X2 P %
+    if (eId === 'sqroot' || eId === 'sqr' || eId === 'pe' || eId === 'perc'  ) {
+
+    }
+    // equation
+    if ( eId === 'equal'){
+        result.innerText=equation()
+        input.innerText = ''
+        isEntered = false
+
+    }
 //Functions
 
 //element selector to change css propertys
@@ -105,47 +119,72 @@ function selectNodesToChangeCSS() {
         }     
     }
 
-    // trim if .0 or .
-    function trimIfNeeded (){
-        if(result.innerText.at(-1)==='.'){
-            input.innerText+=result.innerText.slice(0, -1)
+// trim if .0 or .
+function trimIfNeeded (){
+    var trimed
+    if(result.innerText.at(-1)==='.'){
+        trimed = result.innerText.slice(0, -1)
+    }else{
+         trimed = result.innerText
+    }
+    if(result.innerText.includes(".")){
+        if(result.innerText.split('.')[1] == 0){
+            trimed = result.innerText.slice(0 , -(result.innerText.split('.')[1].length+1))
+        } else{
+            trimed = trimed = result.innerText
         }
     }
+    return trimed
+}
     
-    //calculation buttons 
-    function calculationButtons(elementid , elementText){
-        if (elementid === 'minus' || elementid === 'plus' || elementid === 'division' || elementid === 'multiplier'){
-            var span = document.createElement('span');
-            span.textContent = elementText;
-            span.style.color = '#339DFF';
-            
-            if( input.innerText ===''){
-                input.innerText=result.innerText
-                input.appendChild(span)
-                isEntered = false
-                
-            }
-            if( isEntered === true){
-                input.innerText+=result.innerText
-                input.appendChild(span)
-                isEntered = false
-            }
-            if (isEntered ===false && input.innerText !==''){
-                input.innerText=input.innerText.slice(0, -1)
-                input.appendChild(span)
-            }
-            trimIfNeeded()
-            console.log(input.innerText)
-            //  else {
-            //     input.innerText+=result.innerText
-            //     input.appendChild(span);
-            // }
-        }
+//calculation buttons 
+function calculationButtons( elementText){
+    var span = document.createElement('span');
+    span.textContent = elementText;
+    span.style.color = '#339DFF';           
+    if( input.innerText ===''){
+        input.innerText=trimIfNeeded ()
+        input.appendChild(span)
+        isEntered = false
     }
+    if( isEntered === true){
+        input.innerText+=trimIfNeeded ()
+        input.appendChild(span)
+        isEntered = false
+    }
+    if (isEntered ===false && input.innerText !==''){
+        input.innerText=input.innerText.slice(0, -1)
+        input.appendChild(span)
+    }
+}
+      
+        
 
-    
-    console.log(isEntered)
+// function for functionButtons
+function functionButtons (elementText){
+    // 1/x sqr  sqrroo
+    if ( elementText === '%') {
+        if (isEntered){}
+    }
+}
+// make Equation to work
+function equation() {
+   var result = input.innerText+trimIfNeeded()
+   historyArr.unshift(result + '='+ eval(result))
+   return eval(result)
+}
+//console.log(isEntered)
+console.log(historyArr)
 
+
+// history to display
+if (eId === 'history'){
+    var div = document.createElement('div');
+    for ( i = 0 ; i < historyArr.length; i++) {
+        div.innerHTML+=i
+    }
+    input.appendChild(div)
+}
 })
 
 
