@@ -107,7 +107,9 @@ function selectNodesToChangeCSS() {
 
     // trim if .0 or .
     function trimIfNeeded (){
-        if(result.innerText)
+        if(result.innerText.at(-1)==='.'){
+            input.innerText+=result.innerText.slice(0, -1)
+        }
     }
     
     //calculation buttons 
@@ -132,7 +134,7 @@ function selectNodesToChangeCSS() {
                 input.innerText=input.innerText.slice(0, -1)
                 input.appendChild(span)
             }
-
+            trimIfNeeded()
             console.log(input.innerText)
             //  else {
             //     input.innerText+=result.innerText
