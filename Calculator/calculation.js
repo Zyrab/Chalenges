@@ -80,9 +80,16 @@ function calculationButtons( elementText , Id , small, big, eClss){
         span.textContent = elementText;
         span.style.color = '#339DFF';           
         if (small.innerText.includes(')')==true){
-            small.innerText=big.innerText;
-            small.appendChild(span);
-            isEntered= false
+            if (small.innerText.includes('+(') || small.innerText.includes('-(') ||small.innerText.includes('*(') || small.innerText.includes('/(')){
+                small.innerText=eval(small.innerText.slice(0, -(small.innerText.split('(')[1].length+1))+big.innerText)
+                big.innerText=small.innerText
+                small.appendChild(span);
+                isEntered= false
+            }else{
+                small.innerText=big.innerText;
+                small.appendChild(span);
+                isEntered= false
+            }
         }
         if (isEntered ===false && small.innerText !==''){
             small.innerText=small.innerText.slice(0, -1);
@@ -120,8 +127,14 @@ function calculationButtons( elementText , Id , small, big, eClss){
      if ( Id === 'equal'){
         var txt = small.innerText+trimIfNeeded(big);
         if( txt.includes("(")){
-            small.innerText = small.innerText +'='+big.innerText;
-            isEntered = false;
+            if (small.innerText.includes('+(') || small.innerText.includes('-(') ||small.innerText.includes('*(') || small.innerText.includes('/(')){
+                small.innerText=eval(small.innerText.slice(0, -(small.innerText.split('(')[1].length+1))+big.innerText)
+                big.innerText=small.innerText
+                isEntered= false
+            }else{
+                small.innerText = small.innerText +'='+big.innerText;
+                isEntered = false;
+            }
         } else{
             big.innerText = eval(txt);
             small.innerText = txt +'='+big.innerText;
