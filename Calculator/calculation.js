@@ -1,5 +1,7 @@
 //variables
 const calculator = document.querySelector(".Calculator");
+const historyDiv = document.getElementById('historyAdd')
+const deletehistory = document.getElementById('Delete')
 const historyArr = [];
 var isEntered = false;
 var symbolIsUsed = false;
@@ -42,17 +44,7 @@ calculator.addEventListener('click', e =>{
         }
     }
 
-
-
-
-    // function calculatorButtonsWorkOnClick () {
-
-    // }
-
-
     calculationButtons(eText, eId, small, big , eClss)
-    console.log(isEntered);
-    //console.log(symbolIsUsed);
 })
 
 // ereasing unwanted  symbols
@@ -107,11 +99,13 @@ function calculationButtons( elementText , Id , small, big, eClss){
             isEntered = false;
         }
         if( isEntered === true && small.innerText.includes('=')==false ){
+            historyArr.unshift(small.innerText + trimIfNeeded (big)+'='+ eval(small.innerText + trimIfNeeded (big)))
             small.innerText=eval(small.innerText + trimIfNeeded (big));
             small.appendChild(span);
             big.innerText = eval(small.innerText.slice(0, -1));
             isEntered = false;
             // to add in the history
+            addToHistory()
         }
     }
     if(eClss ==="numb" || eClss ==="numb0" || eClss ==="numb Whitetheme" || eClss ==="numb0 Whitetheme") {
@@ -123,8 +117,8 @@ function calculationButtons( elementText , Id , small, big, eClss){
             isEntered = true;
         }
     }
-     // equation
-     if ( Id === 'equal'){
+    // equation
+    if ( Id === 'equal'){
         var txt = small.innerText+trimIfNeeded(big);
         if( txt.includes("(")){
             if (small.innerText.includes('+(') || small.innerText.includes('-(') ||small.innerText.includes('*(') || small.innerText.includes('/(')){
@@ -142,28 +136,38 @@ function calculationButtons( elementText , Id , small, big, eClss){
             console.log(big.innerText)
         }
         // to add in the history
+        historyArr.unshift(small.innerText)
+        addToHistory()
     }
     if(Id === 'pe'){
-            small.innerText += "("+trimIfNeeded(big)+'*'+3.14+")"
-            big.innerText=trimIfNeeded(big)*3.14
-            isEntered=false
+        small.innerText += "("+trimIfNeeded(big)+'*'+3.14+")"
+        big.innerText=trimIfNeeded(big)*3.14
+        isEntered=false
+        historyArr.unshift(small.innerText + '='+ big.innerText)
+        addToHistory()
     }
     if(Id === 'sqr'){
-            small.innerText += "("+trimIfNeeded(big)+'*'+trimIfNeeded(big)+")"
-            big.innerText=trimIfNeeded(big)*trimIfNeeded(big)
-            isEntered=false
+        small.innerText += "("+trimIfNeeded(big)+'*'+trimIfNeeded(big)+")"
+        big.innerText=trimIfNeeded(big)*trimIfNeeded(big)
+        isEntered=false
+        historyArr.unshift(small.innerText + '='+ big.innerText)
+        addToHistory()
     }
     if(Id === 'sqroot'){
         var sqroot = calculateSquareRoot(trimIfNeeded(big))
         small.innerText += "(√"+sqroot+")"
         big.innerText=sqroot
         isEntered=false
+        historyArr.unshift(small.innerText + '='+ big.innerText)
+        addToHistory()
     }
     if(Id === 'perc'){
         var percent = calculatePercent(trimIfNeeded(small),trimIfNeeded(big))
         small.innerText += "("+percent+")"
         big.innerText=percent
         isEntered=false
+        historyArr.unshift(small.innerText + '='+ eval(small.innerText))
+        addToHistory()
     }
 }
 
@@ -185,3 +189,20 @@ function calculatePercent(number , numberPercent){
     let percent = (number.slice(0 , -1) * (numberPercent/100))
     return percent
 }
+
+//calculations to be added to the history
+function addToHistory(){
+
+    var p = document.createElement('p')
+        p.textContent = historyArr[0]
+        p.className = 'historyP'
+        historyDiv.appendChild(p)
+}
+
+deletehistory.addEventListener('click', e=>{
+    var p = document.querySelector('.historyP')
+    if (e.target.id){
+        historyArr.splice(0,historyArr.length)
+        p.remove()
+    }
+})

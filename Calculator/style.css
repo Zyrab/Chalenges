@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@900&family=Monomaniac+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@900&family=Monomaniac+One&family=Poppins:wght@300&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -150,7 +149,7 @@ body {
     margin-top: 10px;
 }
 .numbD{
-    z-index: 99;
+    z-index: 1;
     margin-top: 10px;
 }
 
@@ -207,7 +206,43 @@ body {
 .historyW{
     fill: #17181A;
 }
-
+.historyD{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: -400px;
+}
 .historyView{
-    display: absolut;
+    display: none;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background: linear-gradient(191.34deg, #292b30 -4.95%, #17181A 103.74%);
+    border-radius: 0px 0px 40px 40px;
+    z-index: 2;
+
+}
+.historyViewD{
+    display: block;
+}
+.historyAdd{
+    color: wheat;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+}
+.historyAdd p {
+    width: 100%;
+    text-align: end;
+    border-top:1px solid #005DB2;
+    padding: 3px;
+    cursor: pointer;
+}
+.deleteHistory{
+    color: #005DB2;
+    padding: 10px;
+    text-align: end;
+    cursor: pointer;
 }

@@ -7,21 +7,17 @@ calculator1.addEventListener('click', e =>{
     var eId = e.target.id
     var eClss = e.target.className
     var eValue = e.target.innerText
-    var result = document.getElementById('result')
-    var input = document.getElementById('input')
     var calculatorId = document.getElementById('calculatorId')
+    var historyDiv = document.getElementById('historyView')
+    var input = document.getElementById('input')
     var calcElements = calculatorId.querySelectorAll('DIV , BUTTON , SVG')
    
     //theme toggle
     if(eId === 'toggle'){
-        selectNodesToChangeCSS();
-    }
-    // history toggle
-    if(eId === 'history'){
-
+        selectNodesToChangeCSS( );
     }
     //Functions
-
+    
     //element selector to change css propertys
     function selectNodesToChangeCSS() {
         for (i = 0 ; i < calcElements.length; i++) {
@@ -64,10 +60,15 @@ calculator1.addEventListener('click', e =>{
             }
         }     
     }
-    function historyToggle(){
-
+    
+    // history toggle
+    if(eId === 'history'){
+        if (historyDiv.classList.contains('historyViewD')){
+            historyDiv.classList.remove('historyViewD')   
+        }else{
+            historyDiv.classList.add('historyViewD')
+        }
     }
-
 })
 
 
