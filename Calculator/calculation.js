@@ -79,7 +79,7 @@ function calculationButtons( elementText , Id , small, big, eClss){
         var span = document.createElement('span');
         span.textContent = elementText;
         span.style.color = '#339DFF';           
-        if (small.innerText.includes(')')==true){
+        if (small.innerText.includes(')')){
             if (small.innerText.includes('+(') || small.innerText.includes('-(') ||small.innerText.includes('*(') || small.innerText.includes('/(')){
                 small.innerText=eval(small.innerText.slice(0, -(small.innerText.split('(')[1].length+1))+big.innerText)
                 big.innerText=small.innerText
@@ -154,8 +154,34 @@ function calculationButtons( elementText , Id , small, big, eClss){
             isEntered=false
     }
     if(Id === 'sqroot'){
-            small.innerText += "("+trimIfNeeded(big)+'*'+3.14+")"
-            big.innerText=trimIfNeeded(big)*3.14
-            isEntered=false
+        var sqroot = calculateSquareRoot(trimIfNeeded(big))
+        small.innerText += "(√"+sqroot+")"
+        big.innerText=sqroot
+        isEntered=false
     }
+    if(Id === 'perc'){
+        var percent = calculatePercent(trimIfNeeded(small),trimIfNeeded(big))
+        small.innerText += "("+percent+")"
+        big.innerText=percent
+        isEntered=false
+    }
+}
+
+
+//calculating square root
+function calculateSquareRoot(number){
+    if ( number < 0 ){ return }
+    let guess = number; // initial guess is number itelf
+    //iterativly improving the guess using Newton-Rapson method
+    const precision = 0.00000000000001; // desired level of precision
+    while (Math.abs( guess * guess - number ) > precision) {
+        guess = ( guess + (number / guess)) / 2;
+    }
+    return guess
+}
+
+//calculatinig percent
+function calculatePercent(number , numberPercent){
+    let percent = (number.slice(0 , -1) * (numberPercent/100))
+    return percent
 }

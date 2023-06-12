@@ -14,7 +14,7 @@ calculator1.addEventListener('click', e =>{
    
     //theme toggle
     if(eId === 'toggle'){
-        selectNodesToChangeCSS( );
+        selectNodesToChangeCSS();
     }
     // history toggle
     if(eId === 'history'){
@@ -65,7 +65,7 @@ calculator1.addEventListener('click', e =>{
         }     
     }
     function historyToggle(){
-        
+
     }
 
 })
