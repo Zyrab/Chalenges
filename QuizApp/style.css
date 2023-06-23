@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
 *{
     margin: 0;
@@ -28,7 +28,7 @@ header ul {
 }
  
 li h3 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     font-style: italic;
     color: #40CBCE;
@@ -56,7 +56,7 @@ main {
     width: 40%;
     height: 50px;
     border: none;
-    box-shadow: 0px 10px 20px #40CBCE;
+    box-shadow: 3px 5px 15px #40CBCE;
     font-size: 20px;
     font-weight: 600;
 }
@@ -78,4 +78,108 @@ main {
     padding: 5px;
     color: #40CBCE;
     border-left: #40CBCE 2px solid;
+}
+
+.name {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #A14667;
+}
+.name input {
+    border: none;
+    background: #F2F2F2;
+    color: #40CBCE;
+    font-size: 20px;
+    appearance: none;
+    outline: none;
+}
+
+.name input::placeholder {
+    color: #40CBCE;
+    font-style: italic;
+  }
+
+/* choose topics aside */
+
+aside h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #A14667;
+    text-shadow: -1px -1px 0 #580a0a, 1px -1px 0 #580a0a, -1px 1px 0 #580a0a, 1px 1px 0 #580a0a;
+    width: 100%;
+}
+aside p {
+    text-align: center;
+    color: #40CBCE;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+aside ul {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+}
+
+aside ul li {
+   
+    display: flex;
+}
+aside li span{
+    padding: 5px;
+    background: #A14667;
+    /* visibility: hidden; */
+
+}
+aside ul p {
+    background: #40CBCE;
+    font-size: 17px;
+    padding: 5px;
+    color: #580a0a;
+}
+aside button{
+    margin-top: 15px;
+    background-color: #40CBCE;
+    color:#ffffff;
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 3px 5px 15px #40CBCE;
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+.selectTopics {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.selectTopics span{
+    align-self: flex-end;
+}
+aside{
+    padding: 100px;
+    width: 80%;
+    background-color: rgb(83, 64, 38);
+    background:transparent;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: none;
+}
+
+aside .diplayed{
+    display: block;
 }
