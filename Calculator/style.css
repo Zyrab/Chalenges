@@ -8,10 +8,15 @@
     box-sizing: border-box;
 }
 body {
+    height: 100%;
     width: 100%;
     background-color: #DAF0FF;
-    font-family: 'Geologica', sans-serif;
-    
+    font-family: 'Geologica', sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex: 1;
 }
 .top{
     display: flex;
@@ -246,3 +251,32 @@ body {
     text-align: end;
     cursor: pointer;
 }
+
+/* footer styling */
+footer {
+    color: #e6e6dd;
+    background-color: #17181A;
+    padding:5px 10% 5px 10%;
+    margin-top: auto;
+}
+/* .logo{
+    height: 40px;
+}
+.logo image {
+    height: 40px
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cpr {
+    text-align: end;
+    margin-top: 20px;
+} */
+

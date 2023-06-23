@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #F2F2F2;
+}
+/* header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    list-style: none;
+}
+ 
+li h3 {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #40CBCE;
+}
+
+/* main stylin */
+main {
+    width: 90%;
+    margin: auto;
+}
+/*  section introduction */
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}  
+
+.introduction img {
+    width: 45%;
+}
+.introduction button {
+    background-color: #40CBCE;
+    color:#ffffff;
+    width: 40%;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 10px 20px #40CBCE;
+    font-size: 20px;
+    font-weight: 600;
+}
+.quizStart{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.introduction h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #A14667;
+    text-shadow: -1px -1px 0 #580a0a, 1px -1px 0 #580a0a, -1px 1px 0 #580a0a, 1px 1px 0 #580a0a;
+    width: 100%;
+}
+
+.introduction h5 {
+    padding: 5px;
+    color: #40CBCE;
+    border-left: #40CBCE 2px solid;
+}
