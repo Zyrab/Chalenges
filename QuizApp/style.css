@@ -11,6 +11,9 @@ body {
     font-family: 'Lato' , sans-serif;
     background-color: #F2F2F2;
 }
+button {
+    cursor: pointer;
+}
 /* header styling */
 header {
     display: flex;
@@ -135,7 +138,8 @@ aside ul li {
 aside li span{
     padding: 5px;
     background: #A14667;
-    /* visibility: hidden; */
+    visibility: hidden; 
+    cursor: pointer;
 
 }
 aside ul p {
@@ -143,6 +147,7 @@ aside ul p {
     font-size: 17px;
     padding: 5px;
     color: #580a0a;
+    cursor: pointer;
 }
 aside button{
     margin-top: 15px;
@@ -158,7 +163,7 @@ aside button{
 }
 .selectTopics {
     width: 60%;
-    height: 60%;
+    height: 70%;
     margin: auto;
     background: #ffffff;
     padding: 20px;
@@ -168,6 +173,7 @@ aside button{
 }
 .selectTopics span{
     align-self: flex-end;
+    cursor: pointer;
 }
 aside{
     padding: 100px;
@@ -180,6 +186,7 @@ aside{
     display: none;
 }
 
-aside .diplayed{
+.displayed{
     display: block;
+    visibility: visible;
 }
