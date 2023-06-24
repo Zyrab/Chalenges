@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizApp</title>
+    <link rel="shortcut icon" href="/imiges/quiz.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
                 <h5>
                     Challenge yourself, embrace learning, and let your curiosity lead you to endless victories!
                 </h5>
-                <div class="name">
+                <div class="name" id="nameDiv">
                     <label for="name"> Name</label>
                     <input type="text" id="name" placeholder="Enter your Name ">
                 </div>
@@ -33,8 +34,10 @@
             </div>
             <img src="./imiges/Tiny_cute_isometric_character_quizz_0.jpg" alt="quiz">
         </section>
-        <section>
-            
+        <section class="quiz">
+            <div class="quizContent">
+                
+            </div>
         </section>
         <aside id="topicContent">
             <div class="selectTopics">
@@ -43,19 +46,19 @@
                 <p> Select more than 3 to start quiz</p>
                 <div class="topics">
                     <ul>
-                        <li> <p>Geography</p> <span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Literature</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Food and Cuisine</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Music Genres</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Mythology and Folklore</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Historical Events</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Sports Legends</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Math and Logic Puzzles</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>Movie Trivia</p><span class="material-symbols-outlined">close</span></li>
-                        <li> <p>General Knowledge</p><span class="material-symbols-outlined">close</span></li>
+                        <li> <p class="topicList" id="geo">Geography</p> <span class="material-symbols-outlined" id="geoClose">close</span></li>
+                        <li> <p class="topicList" id="lit">Literature</p><span class="material-symbols-outlined" id="litClose">close</span></li>
+                        <li> <p class="topicList" id="fod">Food and Cuisine</p><span class="material-symbols-outlined" id="fodClose">close</span></li>
+                        <li> <p class="topicList" id="mus">Music Genres</p><span class="material-symbols-outlined" id="musClose">close</span></li>
+                        <li> <p class="topicList" id="myt">Mythology and Folklore</p><span class="material-symbols-outlined" id="mytClose">close</span></li>
+                        <li> <p class="topicList" id="his">Historical Events</p><span class="material-symbols-outlined" id="hisClose">close</span></li>
+                        <li> <p class="topicList" id="spt">Sports Legends</p><span class="material-symbols-outlined" id="sptClose">close</span></li>
+                        <li> <p class="topicList" id="mat">Math and Logic Puzzles</p><span class="material-symbols-outlined" id="matClose">close</span></li>
+                        <li> <p class="topicList" id="mov">Movie Trivia</p><span class="material-symbols-outlined" id="movClose">close</span></li>
+                        <li> <p class="topicList" id="gen">General Knowledge</p><span class="material-symbols-outlined" id="genClose">close</span></li>
                     </ul>
                 </div>
-                <button>Start Quiz</button>
+                <button id="quizStart">Start Quiz</button>
             </div>
         </aside>
     </main>

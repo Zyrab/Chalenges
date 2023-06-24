@@ -162,8 +162,7 @@ aside button{
     align-self: flex-end;
 }
 .selectTopics {
-    width: 60%;
-    height: 70%;
+    width: 80%;
     margin: auto;
     background: #ffffff;
     padding: 20px;
@@ -189,4 +188,7 @@ aside{
 .displayed{
     display: block;
     visibility: visible;
+}
+.topicSelected {
+    background: #78DDD5;
 }
