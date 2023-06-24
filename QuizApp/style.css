@@ -185,10 +185,96 @@ aside{
     display: none;
 }
 
+
+
+/* section Quiz */
+
+.quiz{
+    display: none;
+}
+
+.quizQuestion {
+    width: 80%;
+    color: #A14667;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+
+}
+.questionVarints{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+}
+
+.quizNavigation{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+}
+.quizNavigation button{
+    background-color: #40CBCE;
+    color:#ffffff;
+    width: 100px;
+    height: 50px;
+    border: none;
+    box-shadow: 3px 5px 15px #40CBCE;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* prgress bar */
+
+.questionProgresBar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0 4rem 0;
+    counter-reset: step;
+}
+.questionProgresBar::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 95%;
+    background-color: #40CBCE;
+    color:#ffffff;
+}
+
+.progressSteps{
+    width: 35px ;
+    height: 35px;
+    background-color: #40CBCE;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    z-index: 0;
+    font-weight: 700;
+}
+.progressSteps::before{
+    counter-increment: step;
+    content: counter(step);
+    color:#ffffff;
+}
+
+
+/* activation classes */
 .displayed{
     display: block;
     visibility: visible;
 }
 .topicSelected {
     background: #78DDD5;
+}
+.unDisplayed{
+    display: none;
 }

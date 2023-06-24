@@ -47,6 +47,15 @@
                 selectedTopics.splice(index, 1);
             }
         }
+
+        //StartQuiz button . 
+
+        if ( eId === 'quizStart' && selectedTopics.length >= 3 ){
+            ToggleClassList('introduction', 'unDisplayed')
+            ToggleClassList('quiz', 'displayed')
+            ToggleClassList('topicContent', 'displayed')
+            
+        }
     })
 
 
