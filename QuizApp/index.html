@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp</title>
-    <link rel="shortcut icon" href="/imiges/quiz.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuizApp</title>
+        <link rel="shortcut icon" href="/imiges/quiz.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="main.js"></script>
+        <script defer src="quizlogic.js"></script>
+        <script defer src="progressBar.js"></script>
 </head>
 <body>
     <header>
@@ -37,35 +40,36 @@
         <section id="quiz" class="quiz">
             <div class="quizContent">
                 <div class="questionProgresBar">
-                    <div class="progressSteps active"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
-                    <div class="progressSteps"></div>
+                    <div class="steps">
+                        <span class="circle active">1</span>
+                        <span class="circle">2</span>
+                        <span class="circle">3</span>
+                        <span class="circle">4</span>
+                        <span class="circle">5</span>
+                        <span class="circle">6</span>
+                        <span class="circle">7</span>
+                        <span class="circle">8</span>
+                        <span class="circle">9</span>
+                        <span class="circle">10</span>
+                        <div class="progresBar">
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="quizQuestion">
-                    <P>here goes a qustion</P>
+                <div class="quizQuestion" id="quizQuestion">
+                    
                 </div>
-                <div class="questionVarints">
-                    <p>variant</p>
-                    <p>variant</p>
-                    <p>variant</p>
-                    <p>variant</p>
+                <div class="questionVarints" id="variants">
+                   <button class="variant" id="btn-1"></button>
+                   <button class="variant" id="btn-2"></button>
+                   <button class="variant" id="btn-3"></button>
+                   <button class="variant" id="btn-4"></button>
                 </div>
                 <div class="quizNavigation">
-                    <button> Previous</button>
-                    <div class="timer">
-                    <button>Next</button>
+                    <button id="prev" disabled> Previous</button>
+                    <div class="timer"></div>
+                    <button id="next">Next</button>
+                    <button id="finish" style="display: none;">Finish</button>
                 </div>
             </div>
         </section>
@@ -96,5 +100,4 @@
         
     </footer>
 </body>
-<script src="main.js"></script>
 </html>

@@ -7,7 +7,7 @@
         var eClass = e.target.className
         var elem = e.target
 
-        console.log(e.target.id)
+        //console.log(selectedTopics)
 
 
         
@@ -57,7 +57,6 @@
             
         }
     })
-
 
 
 //Toggle classlis function

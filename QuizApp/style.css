@@ -190,7 +190,7 @@ aside{
 /* section Quiz */
 
 .quiz{
-    display: none;
+    display: block;
 }
 
 .quizQuestion {
@@ -228,44 +228,67 @@ aside{
     font-size: 20px;
     font-weight: 600;
 }
-
+.variant {
+    background-color: #40CBCE;
+    color:#ffffff;
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 3px 5px 15px #40CBCE;
+    font-size: 20px;
+    font-weight: 600;
+}
+.selected {
+    background-color: #A14667;
+}
 /* prgress bar */
-
 .questionProgresBar{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 0 4rem 0;
-    counter-reset: step;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
-.questionProgresBar::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 95%;
-    background-color: #40CBCE;
-    color:#ffffff;
-}
-
-.progressSteps{
-    width: 35px ;
-    height: 35px;
-    background-color: #40CBCE;
-    border-radius: 50%;
+.questionProgresBar .steps {
     display: flex;
-    justify-content:center ;
+    width: 100%;
     align-items: center;
-    z-index: 0;
-    font-weight: 700;
+    justify-content: space-between;
+    position: relative;
 }
-.progressSteps::before{
-    counter-increment: step;
-    content: counter(step);
-    color:#ffffff;
+.steps .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    columns: #999;
+    font-size: 22px;
+    font-weight: 500;
+    color: #580a0a;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    border: 4px solid #e0e0e0;
+    background-color: #F2F2F2;
+    transition: all 200ms ease;
+    transition-delay: 0ms;
 }
-
+.steps .circle.active{
+    border-color: #40CBCE;
+    transition-delay: 100ms;
+}
+.steps .progresBar{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+}
+.progresBar .indicator{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #40CBCE;
+    transition: all 300ms ease;
+}
 
 /* activation classes */
 .displayed{
@@ -277,4 +300,17 @@ aside{
 }
 .unDisplayed{
     display: none;
+}
+
+.correct{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
+
+button:disabled{
+    background-color: #999;
+    box-shadow: none;
+    cursor: not-allowed;
 }
