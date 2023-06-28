@@ -257,12 +257,15 @@ footer {
     color: #e6e6dd;
     background-color: #17181A;
     padding:5px 10% 5px 10%;
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-/* .logo{
+.logo{
     height: 40px;
 }
-.logo image {
+.logo img {
     height: 40px
 }
 .footer-container{
@@ -278,5 +281,5 @@ footer {
 .cpr {
     text-align: end;
     margin-top: 20px;
-} */
+}
 
