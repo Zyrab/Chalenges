@@ -190,7 +190,7 @@ aside{
 /* section Quiz */
 
 .quiz{
-    display: block;
+    display: none;
 }
 
 .quizQuestion {
@@ -199,8 +199,8 @@ aside{
     font-size: 35px;
     text-align: center;
     margin: auto;
-
 }
+
 .questionVarints{
     width: 80%;
     margin: auto;

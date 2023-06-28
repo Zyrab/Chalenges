@@ -4,8 +4,8 @@
 
     forEventListener.addEventListener('click', e => {
         var eId = e.target.id
+        var eText = e.target.innerText
         var eClass = e.target.className
-        var elem = e.target
 
         //console.log(selectedTopics)
 
@@ -31,7 +31,7 @@
             var spanId = eId+'Close'
             ToggleClassList(spanId , 'displayed')
             ToggleClassList(eId , 'topicSelected')
-            selectedTopics.push(eId)
+            selectedTopics.push(eText)
         }
 
         //this is to remove selection for topics
@@ -54,6 +54,7 @@
             ToggleClassList('introduction', 'unDisplayed')
             ToggleClassList('quiz', 'displayed')
             ToggleClassList('topicContent', 'displayed')
+            displayNewQuestion()
             
         }
     })
@@ -64,3 +65,22 @@
         var toggleClass = document.getElementById(elementId)
         toggleClass.classList.toggle(elementClassName)
     }
+
+
+// // this function will create and uppend new question to html
+//     function displayNewQuestion(text , id ){
+//         minusId = id - 1
+//         plusId = id + 1
+//         var QuestionDiv = document.getElementById('quizQuestion')
+//         var question = document.createElement('p')
+//         question.id = '10' + id
+
+//         noTodisplay = '10' + minusId
+//         question.textContent = text 
+//         QuestionDiv.appendChild(question)
+//         console.log(minusId)
+//         console.log(id)
+//         ToggleClassList(question.id, 'displayed')
+//         ToggleClassList(noTodisplay, 'unDisplayed')
+      
+//     }
