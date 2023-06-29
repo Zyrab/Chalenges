@@ -19,7 +19,7 @@
             quiestionList.forEach((quiestionList , index) =>{
                 quiestionList.style.display = index === currentQuestion - 1 ? 'block' : 'none'
             })
-            quiestionButtons.forEach((quiestionButton ) => {
+            quiestionButtons.forEach((quiestionButton  ) => {
                 quiestionButton.style.display = quiestionButton.id.slice(0, -1) == '10' + currentQuestion ? 'block' : 'none'
             })
             // upgrade progressbar width
@@ -37,8 +37,9 @@
                 document.getElementById('prev').disabled = true
             }
             
-
+            
             
         }
+       
 
     })

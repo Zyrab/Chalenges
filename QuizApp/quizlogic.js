@@ -23,8 +23,9 @@
 
       randomiseAnswers (quizQuestions[randomIndex].answers , question.id)
     }
+    selectingAnswer(currentQuestion)
     
-    selectingAnswer()
+    
     
   })
   .catch(error => {
@@ -44,16 +45,21 @@ function randomiseAnswers (answers , id) {
     button.id = id  + i
     button.innerText = answers[i]
     button.classList = 'variant'
+    button.classList.add('v'+id.substring(2,4))
     button.style.display = button.id.slice(0, -1) === '101' ? 'block' : 'none';
     answerDiv.appendChild(button)
   }
   
 }
-function selectingAnswer() {
-    var answerDiv = document.getElementById('variants') 
-    answerDiv.addEventListener('click' , e =>{
-        if (e.target.id !== 'variants'){
-            e.target.classList.toggle('selected')          
-        }
-    })
-  }
+function selectingAnswer(id) {
+  id = 'v'+id
+  console.log(id)
+  const buttons = document.querySelectorAll(`.${id}`);
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+    });         
+})
+}
+
