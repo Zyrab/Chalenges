@@ -35,11 +35,7 @@
                 document.getElementById('finish').style.display = 'none'          
             } else {
                 document.getElementById('prev').disabled = true
-            }
-            
-            
-            
+            }     
+            selectingAnswer(currentQuestion)  
         }
-       
-
     })

@@ -12,7 +12,6 @@
     
     for ( i = 1 ; i <= 10 ; i++ ){
       let randomIndex = Math.floor(Math.random() * quizQuestions.length);
-
       var question = document.createElement('p')
       question.textContent = quizQuestions[randomIndex].question 
       question.id = '10' + i
@@ -22,17 +21,18 @@
       
 
       randomiseAnswers (quizQuestions[randomIndex].answers , question.id)
+      
     }
-    selectingAnswer(currentQuestion)
     
-    
-    
+    selectingAnswer(1)  
+        
   })
   .catch(error => {
     // Handle any errors that occur during the fetch
     console.error('Error fetching JSON:', error);
   });
 }
+
 
 
 function randomiseAnswers (answers , id) {
