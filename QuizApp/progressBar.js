@@ -40,7 +40,6 @@
             selectingAnswer(currentQuestion)  
             // if button id is finish. finishing the quiz and displaying the result
             if (e.target.id === 'finish'){
-                console.log(selectedAnswers);
                 
                 let sum = selectedAnswers.reduce((accumulator, currentValue) => accumulator + parseInt(currentValue), 0);
 

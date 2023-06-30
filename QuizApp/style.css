@@ -160,6 +160,7 @@ aside button{
     font-size: 20px;
     font-weight: 600;
     align-self: flex-end;
+    margin-right: 30px;
 }
 .selectTopics {
     width: 80%;
@@ -336,6 +337,23 @@ aside{
     justify-content: space-around;
 }
 
+.correctAnswers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+
+}
+.correctAnswers p{
+    font-size: 20px;
+    border: 1px solid #999;
+    padding: 5px;
+  
+
+}
+
 /* activation classes */
 .displayed{
     display: block;
@@ -349,10 +367,10 @@ aside{
 }
 
 .correct{
-    background-color: green;
+    background-color: rgb(13, 155, 13);
 }
 .wrong{
-    background-color: red;
+    background-color: #a0073f;
 }
 
 button:disabled{
@@ -390,4 +408,62 @@ footer {
 .cpr {
     text-align: end;
     margin-top: 20px;
+}
+
+@media screen and (max-width:768px){
+    .quizStart{
+        width: 100%;
+        gap:30px;
+    }
+    img {
+        display: none;
+    }
+    .selectTopics{
+        width: 100%;
+    }
+    .topicContent {
+        padding: 0;
+    }
+    .steps .circle{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .quizQuestions{
+        font-size: 25px;
+    }
+    .quizQuestion{
+        margin-top: 5px;
+        padding-top: 0;
+        height: 150px;
+    }
+    .questionVarints{
+        margin-top: 10px;
+        flex-direction: column;
+        height: 150px;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .variant{
+        width: 100%;
+    }
+    .correctAnswers p{
+        width: 40%;
+        height: 60px;
+        font-size: 13px;
+    }
+    #playerName{
+        font-size: 25px;
+    }
+    .resultCircle {
+        width: 120px;
+        height: 120px;
+    }
+    .resultContainer{
+        gap: 5px;
+    }
+    .resultNav{
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }

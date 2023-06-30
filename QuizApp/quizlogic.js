@@ -1,6 +1,7 @@
 
       var correctAnswers = [] 
       var selectedAnswers = [] 
+      var selectedAnswersValue = [] 
   // this function will create and uppend new question to html
   function displayNewQuestion(){
     fetch('quiz.json')
@@ -29,7 +30,6 @@
       }
     }
     selectingAnswer(1)        
-    console.log(correctAnswers)
   })
   .catch(error => {
     // Handle any errors that occur during the fetch
@@ -66,7 +66,7 @@ function randomiseAnswers (answers , id , correctAnswer) {
       buttons.forEach(btn =>{ btn.classList.remove('selected')
     })
     button.classList.add('selected')
-   // selectedAnswers[id-1] = button.textContent
+    selectedAnswersValue[id-1] = button.textContent
     selectedAnswers[id-1] = correctAnswers[id-1] === button.textContent ? '1' : '0'
     })        
   })

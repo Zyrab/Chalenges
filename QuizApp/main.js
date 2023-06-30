@@ -65,4 +65,20 @@ function ToggleClassList ( elementId , elementClassName) {
         var toggleClass = document.getElementById(elementId)
         toggleClass.classList.toggle(elementClassName)
     }
-    
+// this function is for the rateke quiz button, it reloads the page
+function reloadPage() {
+    location.reload();
+}
+
+// this function is to show correct answers after finishing quest
+function showCorrectAnswers(){
+    var answerDiv = document.getElementById('correctAnswers')
+    for ( i = 0; i < correctAnswers.length ; i++ ) {;   
+        let correctAnswer = document.createElement('P')
+        correctAnswer.innerHTML = i+1+ ')' + correctAnswers[i]+ '</br>' + 'youre answer was: ' + selectedAnswersValue[i]
+        correctAnswer.classList = 'correctAnswer'
+        answerDiv.appendChild(correctAnswer)
+        correctAnswers[i]!== selectedAnswersValue[i] ? correctAnswer.classList.add('wrong') : correctAnswer.classList.add('correct')
+        
+    }
+}
