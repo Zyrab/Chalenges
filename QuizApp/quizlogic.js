@@ -7,23 +7,25 @@
       // Process the JSON data here
       
     // Generate a random index
-    //selecting div twhere questions will be displayed
+    //selecting div where questions will be displayed
     var QuestionDiv = document.getElementById('quizQuestion')
-    
+    var displayedQuestions = []
     for ( i = 1 ; i <= 10 ; i++ ){
       let randomIndex = Math.floor(Math.random() * quizQuestions.length);
-      var question = document.createElement('p')
-      question.textContent = quizQuestions[randomIndex].question 
-      question.id = '10' + i
-      question.classList = 'quizQuestions'
-      question.style.display = [`${question.id === '101' ? 'block' : 'none'}`]
-      QuestionDiv.appendChild(question)
-      
-
-      randomiseAnswers (quizQuestions[randomIndex].answers , question.id)
-      
+      let random = quizQuestions[randomIndex]
+      let question = document.createElement('p')
+      if  (selectedTopics.includes(random.topic) && !displayedQuestions.includes(random)) {  
+        question.textContent = random.question 
+        question.id = '10' + i
+        question.classList = 'quizQuestions'
+        question.style.display = [`${question.id === '101' ? 'block' : 'none'}`]
+        QuestionDiv.appendChild(question)
+        randomiseAnswers (random.answers , question.id)
+        displayedQuestions.push(random)
+      } else {
+        i--
+      }
     }
-    
     selectingAnswer(1)  
         
   })
@@ -53,7 +55,6 @@ function randomiseAnswers (answers , id) {
 }
 function selectingAnswer(id) {
   id = 'v'+id
-  console.log(id)
   const buttons = document.querySelectorAll(`.${id}`);
   buttons.forEach(button => {
     button.addEventListener('click', () => {

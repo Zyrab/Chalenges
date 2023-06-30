@@ -897,5 +897,1153 @@
       "question": "Which music genre is known for its use of sampling, drum machines, and electronic beats?",
       "answers": ["Hip Hop", "Reggae", "Pop", "Classical"],
       "correctAnswer": 0
-    }
+    },  
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Who is the Greek god of the sea?",
+        "answers": ["Poseidon", "Zeus", "Hades", "Apollo"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "In Norse mythology, who is the god of mischief?",
+        "answers": ["Loki", "Odin", "Thor", "Freya"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Which creature is a symbol of wisdom in Greek mythology?",
+        "answers": ["Owl", "Eagle", "Sparrow", "Hawk"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "In Egyptian mythology, who is the god of the afterlife?",
+        "answers": ["Osiris", "Ra", "Anubis", "Horus"],
+        "correctAnswer": 2
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Who is the legendary king of Britain in Arthurian legends?",
+        "answers": ["Arthur", "Lancelot", "Gawain", "Merlin"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Which creature is a symbol of good luck in Chinese mythology?",
+        "answers": ["Dragon", "Phoenix", "Turtle", "Koi fish"],
+        "correctAnswer": 2
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Who is the Greek goddess of wisdom and warfare?",
+        "answers": ["Athena", "Hera", "Aphrodite", "Artemis"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "In Hindu mythology, who is the destroyer of worlds?",
+        "answers": ["Shiva", "Vishnu", "Brahma", "Kali"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Which legendary creature is half-lion and half-eagle?",
+        "answers": ["Griffin", "Cerberus", "Chimera", "Sphinx"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Who is the Norse goddess of love and beauty?",
+        "answers": ["Freya", "Frigg", "Idun", "Sif"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "In Japanese folklore, what type of creature is a Kitsune?",
+        "answers": ["Fox", "Cat", "Wolf", "Rabbit"],
+        "correctAnswer": 0
+      },
+      {
+        "topic": "Mythology and Folklore",
+        "question": "Who is the king of the gods in Roman mythology?",
+        "answers": ["Jupiter", "Pluto", "Neptune", "Apollo"],
+        "correctAnswer": 0
+      },
+    {
+  "topic": "Mythology and Folklore",
+  "question": "Which mythical creature is a symbol of rebirth and immortality?",
+  "answers": ["Phoenix", "Centaur", "Gorgon", "Minotaur"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Native American folklore, who is the trickster figure in many stories?",
+  "answers": ["Coyote", "Eagle", "Bear", "Raven"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Greek goddess of the moon?",
+  "answers": ["Selene", "Demeter", "Hestia", "Persephone"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a symbol of good fortune and prosperity in Irish folklore?",
+  "answers": ["Leprechaun", "Banshee", "Fairy", "Mermaid"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Egyptian god of the sun?",
+  "answers": ["Ra", "Anubis", "Horus", "Osiris"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Greek mythology, who is the god of wine and celebration?",
+  "answers": ["Dionysus", "Apollo", "Hermes", "Ares"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Chinese deity known as the 'Monkey King'?",
+  "answers": ["Sun Wukong", "Guanyin", "Zhu Bajie", "Sha Wujing"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a legendary horse-like creature with a single horn on its forehead?",
+  "answers": ["Unicorn", "Pegasus", "Centaur", "Griffin"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Norse mythology, who is the god of thunder?",
+  "answers": ["Thor", "Loki", "Odin", "Freyr"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Celtic goddess of love, beauty, and fertility?",
+  "answers": ["Brigid", "Morrigan", "Rhiannon", "Aphrodite"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Hindu mythology, who is the god of creation?",
+  "answers": ["Brahma", "Shiva", "Vishnu", "Kali"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Greek goddess of love and beauty?",
+  "answers": ["Aphrodite", "Hera", "Artemis", "Athena"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a legendary fire-breathing reptile?",
+  "answers": ["Dragon", "Sphinx", "Werewolf", "Vampire"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Roman god of war?",
+  "answers": ["Mars", "Jupiter", "Neptune", "Pluto"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Japanese folklore, what are supernatural spirits that reside in natural elements?",
+  "answers": ["Yokai", "Oni", "Kitsune", "Tengu"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Irish god of the sea?",
+  "answers": ["Manannán mac Lir", "Dagda", "Lugh", "Morrigan"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a mythical bird associated with fire and rebirth?",
+  "answers": ["Phoenix", "Harpy", "Siren", "Griffin"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Aztec mythology, who is the feathered serpent god?",
+  "answers": ["Quetzalcoatl", "Huitzilopochtli", "Tlaloc", "Xipe Totec"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Norse goddess of love, beauty, and fertility?",
+  "answers": ["Freyja", "Skadi", "Sif", "Hel"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a half-human, half-goat figure in Greek mythology?",
+  "answers": ["Satyr", "Cyclops", "Minotaur", "Medusa"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which mythical creature is a symbol of rebirth and immortality?",
+  "answers": ["Phoenix", "Centaur", "Gorgon", "Minotaur"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Native American folklore, who is the trickster figure in many stories?",
+  "answers": ["Coyote", "Eagle", "Bear", "Raven"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Greek goddess of the moon?",
+  "answers": ["Selene", "Demeter", "Hestia", "Persephone"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a symbol of good fortune and prosperity in Irish folklore?",
+  "answers": ["Leprechaun", "Banshee", "Fairy", "Mermaid"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Egyptian god of the sun?",
+  "answers": ["Ra", "Anubis", "Horus", "Osiris"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Greek mythology, who is the god of wine and celebration?",
+  "answers": ["Dionysus", "Apollo", "Hermes", "Ares"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Chinese deity known as the 'Monkey King'?",
+  "answers": ["Sun Wukong", "Guanyin", "Zhu Bajie", "Sha Wujing"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a legendary horse-like creature with a single horn on its forehead?",
+  "answers": ["Unicorn", "Pegasus", "Centaur", "Griffin"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Norse mythology, who is the god of thunder?",
+  "answers": ["Thor", "Loki", "Odin", "Freyr"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Celtic goddess of love, beauty, and fertility?",
+  "answers": ["Brigid", "Morrigan", "Rhiannon", "Aphrodite"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Hindu mythology, who is the god of creation?",
+  "answers": ["Brahma", "Shiva", "Vishnu", "Kali"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Greek goddess of love and beauty?",
+  "answers": ["Aphrodite", "Hera", "Artemis", "Athena"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a legendary fire-breathing reptile?",
+  "answers": ["Dragon", "Sphinx", "Werewolf", "Vampire"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Roman god of war?",
+  "answers": ["Mars", "Jupiter", "Neptune", "Pluto"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Japanese folklore, what are supernatural spirits that reside in natural elements?",
+  "answers": ["Yokai", "Oni", "Kitsune", "Tengu"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Irish god of the sea?",
+  "answers": ["Manannán mac Lir", "Dagda", "Lugh", "Morrigan"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a mythical bird associated with fire and rebirth?",
+  "answers": ["Phoenix", "Harpy", "Siren", "Griffin"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "In Aztec mythology, who is the feathered serpent god?",
+  "answers": ["Quetzalcoatl", "Huitzilopochtli", "Tlaloc", "Xipe Totec"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Who is the Norse goddess of love, beauty, and fertility?",
+  "answers": ["Freyja", "Skadi", "Sif", "Hel"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Mythology and Folklore",
+  "question": "Which creature is a half-human, half-goat figure in Greek mythology?",
+  "answers": ["Satyr", "Cyclops", "Minotaur", "Medusa"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did Christopher Columbus reach the Americas?",
+  "answers": ["1492", "1519", "1620", "1776"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which battle marked the end of the Napoleonic Wars?",
+  "answers": ["Waterloo", "Gettysburg", "Stalingrad", "Hastings"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event triggered the start of World War I?",
+  "answers": ["Assassination of Archduke Franz Ferdinand", "Bombing of Pearl Harbor", "Fall of the Berlin Wall", "Signing of the Treaty of Versailles"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the United States declare independence from Great Britain?",
+  "answers": ["1776", "1789", "1812", "1865"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which city was the capital of the Aztec Empire?",
+  "answers": ["Tenochtitlan", "Cuzco", "Machu Picchu", "Teotihuacan"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event led to the start of the American Civil War?",
+  "answers": ["Attack on Fort Sumter", "Boston Tea Party", "Emancipation Proclamation", "Battle of Gettysburg"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Berlin Wall fall?",
+  "answers": ["1989", "1969", "1945", "1991"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which country was the first to successfully launch a satellite into space?",
+  "answers": ["Soviet Union (Russia)", "United States", "China", "Germany"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event started the Great Fire of London in 1666?",
+  "answers": ["A bakery fire", "An earthquake", "A lightning strike", "A volcanic eruption"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which document established the principles of the French Revolution?",
+  "answers": ["Declaration of the Rights of Man and of the Citizen", "Magna Carta", "Emancipation Proclamation", "Treaty of Versailles"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Russian Revolution take place?",
+  "answers": ["1917", "1789", "1945", "1492"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which battle marked the end of the American Revolutionary War?",
+  "answers": ["Battle of Yorktown", "Battle of Bunker Hill", "Battle of Saratoga", "Battle of Gettysburg"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Who was the first person to orbit the Earth?",
+  "answers": ["Yuri Gagarin", "Neil Armstrong", "John F. Kennedy", "Albert Einstein"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event marked the beginning of the Protestant Reformation?",
+  "answers": ["Posting of the Ninety-Five Theses", "Signing of the Magna Carta", "Fall of the Roman Empire", "Discovery of the New World"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Industrial Revolution begin?",
+  "answers": ["1760", "1492", "1945", "1989"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which war is often referred to as the 'War to End All Wars'?",
+  "answers": ["World War I", "World War II", "Cold War", "Vietnam War"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event led to the signing of the Magna Carta in 1215?",
+  "answers": ["Conflict between King John and his barons", "French Revolution", "Discovery of America", "Fall of the Roman Empire"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Who was the leader of the Soviet Union during World War II?",
+  "answers": ["Joseph Stalin", "Vladimir Lenin", "Mikhail Gorbachev", "Nikita Khrushchev"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the American colonies declare independence from Britain?",
+  "answers": ["1776", "1492", "1812", "1945"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which war resulted in the formation of the United Nations?",
+  "answers": ["World War II", "Cold War", "Vietnam War", "Korean War"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event led to the start of the French Revolution?",
+  "answers": ["Storming of the Bastille", "Boston Tea Party", "Fall of the Roman Empire", "Signing of the Treaty of Versailles"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Spanish Armada attempt to invade England?",
+  "answers": ["1588", "1776", "1945", "1492"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Who was the first female Prime Minister of the United Kingdom?",
+  "answers": ["Margaret Thatcher", "Queen Elizabeth I", "Angela Merkel", "Indira Gandhi"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event led to the start of the American Revolutionary War?",
+  "answers": ["Battle of Lexington and Concord", "Attack on Fort Sumter", "Signing of the Magna Carta", "Fall of the Berlin Wall"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Bolshevik Revolution take place in Russia?",
+  "answers": ["1917", "1776", "1945", "1492"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which event sparked the outbreak of World War II?",
+  "answers": ["Invasion of Poland", "Bombing of Pearl Harbor", "Fall of the Berlin Wall", "Signing of the Treaty of Versailles"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+  "answers": ["Nikita Khrushchev", "Joseph Stalin", "Mikhail Gorbachev", "Vladimir Lenin"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "In what year did the Korean War begin?",
+  "answers": ["1950", "1969", "1989", "1945"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "Which event marked the beginning of the Space Age?",
+  "answers": ["Launch of Sputnik 1", "Moon landing", "Invention of the telescope", "Signing of the Magna Carta"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Historical Events",
+  "question": "What event led to the end of apartheid in South Africa?",
+  "answers": ["Election of Nelson Mandela", "American Civil Rights Movement", "Fall of the Berlin Wall", "Discovery of America"],
+  "correctAnswer": 0
+},
+{
+  "topic": "Sports Legends",
+  "question": "Who is considered the greatest basketball player of all time?",
+  "answers": ["Michael Jordan", "LeBron James", "Kobe Bryant", "Magic Johnson"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which tennis player has the most Grand Slam titles in history?",
+  "answers": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Serena Williams"],
+  "correctAnswer": 3
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who holds the record for the most goals scored in a single season in professional football?",
+  "answers": ["Lionel Messi", "Cristiano Ronaldo", "Pele", "Gerd Muller"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the fastest man in the world?",
+  "answers": ["Usain Bolt", "Carl Lewis", "Tyson Gay", "Asafa Powell"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which golfer has the most major championships in history?",
+  "answers": ["Jack Nicklaus", "Tiger Woods", "Arnold Palmer", "Rory McIlroy"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the most decorated Olympian of all time?",
+  "answers": ["Michael Phelps", "Usain Bolt", "Simone Biles", "Carl Lewis"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the only boxer to have won world championships in eight different weight classes?",
+  "answers": ["Manny Pacquiao", "Floyd Mayweather Jr.", "Muhammad Ali", "Mike Tyson"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which Formula 1 driver holds the record for the most World Championships?",
+  "answers": ["Lewis Hamilton", "Michael Schumacher", "Ayrton Senna", "Sebastian Vettel"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is considered the greatest female gymnast of all time?",
+  "answers": ["Simone Biles", "Nadia Comaneci", "Gabby Douglas", "Laurie Hernandez"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the most successful female tennis player in Open Era history?",
+  "answers": ["Serena Williams", "Steffi Graf", "Martina Navratilova", "Chris Evert"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which footballer has won the FIFA Ballon d'Or award the most times?",
+  "answers": ["Lionel Messi", "Cristiano Ronaldo", "Ronaldinho", "Zinedine Zidane"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is considered the greatest Formula 1 driver of all time?",
+  "answers": ["Michael Schumacher", "Lewis Hamilton", "Ayrton Senna", "Juan Manuel Fangio"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which boxer is known for his famous 'Rumble in the Jungle' fight?",
+  "answers": ["Muhammad Ali", "Mike Tyson", "Joe Frazier", "George Foreman"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the most successful female alpine ski racer in history?",
+  "answers": ["Lindsey Vonn", "Mikaela Shiffrin", "Tina Maze", "Anja Paerson"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is considered the greatest cricket batsman of all time?",
+  "answers": ["Sachin Tendulkar", "Don Bradman", "Brian Lara", "Ricky Ponting"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which athlete holds the record for the most Olympic gold medals?",
+  "answers": ["Michael Phelps", "Usain Bolt", "Carl Lewis", "Jesse Owens"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the most successful female swimmer in Olympic history?",
+  "answers": ["Katie Ledecky", "Missy Franklin", "Dara Torres", "Jenny Thompson"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which basketball player has the most NBA championships?",
+  "answers": ["Bill Russell", "Michael Jordan", "Kareem Abdul-Jabbar", "Magic Johnson"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is the only player to have won the FIFA World Cup three times as captain?",
+  "answers": ["Franz Beckenbauer", "Diego Maradona", "Pele", "Johan Cruyff"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Which athlete holds the record for the most goals scored in international football?",
+  "answers": ["Cristiano Ronaldo", "Lionel Messi", "Pele", "Miroslav Klose"],
+  "correctAnswer": 3
+  },
+  {
+  "topic": "Sports Legends",
+  "question": "Who is considered the greatest female tennis player of all time?",
+  "answers": ["Serena Williams", "Steffi Graf", "Martina Navratilova", "Chris Evert"],
+  "correctAnswer": 0
+  },
+  {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a car travels at a speed of 60 miles per hour, how long does it take to travel 120 miles?",
+    "answers": ["1 hour", "2 hours", "3 hours", "4 hours"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If 5 apples cost $10, how much would 8 apples cost?",
+    "answers": ["$12", "$14", "$16", "$18"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "Sally has 3 times as many toy cars as Bob. If Bob has 5 toy cars, how many toy cars does Sally have?",
+    "answers": ["8", "10", "12", "15"],
+    "correctAnswer": 3
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "What number comes next in the sequence: 1, 1, 2, 3, 5, 8, ...?",
+    "answers": ["10", "11", "12", "13"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a rectangle has a length of 8 units and a width of 4 units, what is its perimeter?",
+    "answers": ["12 units", "16 units", "24 units", "32 units"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If 2x + 5 = 13, what is the value of x?",
+    "answers": ["4", "6", "8", "10"],
+    "correctAnswer": 0
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a pizza is divided into 8 equal slices and 3 slices are eaten, what fraction of the pizza remains?",
+    "answers": ["1/4", "3/8", "1/2", "5/8"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If 4 cats can catch 4 mice in 4 minutes, how many cats are needed to catch 16 mice in 8 minutes?",
+    "answers": ["2 cats", "4 cats", "8 cats", "16 cats"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "What is the square root of 144?",
+    "answers": ["9", "11", "12", "14"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a train travels at a speed of 50 miles per hour for 3 hours, how far does it travel?",
+    "answers": ["100 miles", "150 miles", "200 miles", "250 miles"],
+    "correctAnswer": 3
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "What is the value of 2 + 2 * 2?",
+    "answers": ["4", "6", "8", "10"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a shirt is on sale for 20% off its original price of $40, what is the sale price?",
+    "answers": ["$24", "$28", "$32", "$36"],
+    "correctAnswer": 0
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a box contains 12 red balls and 8 blue balls, what is the probability of picking a red ball?",
+    "answers": ["40%", "50%", "60%", "70%"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If the time is 9:45 AM, what time will it be in 2 hours and 30 minutes?",
+    "answers": ["11:15 AM", "12:15 PM", "1:15 PM", "2:15 PM"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If 3 workers can build a wall in 6 hours, how many hours will it take for 6 workers to build the same wall?",
+    "answers": ["1 hour", "2 hours", "3 hours", "4 hours"],
+    "correctAnswer": 0
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "What is the sum of angles in a triangle?",
+    "answers": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+    "correctAnswer": 1
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a number is multiplied by 2 and then increased by 5, the result is 17. What is the original number?",
+    "answers": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a book has 300 pages and you read 20 pages per day, how many days will it take to finish the book?",
+    "answers": ["10 days", "15 days", "20 days", "25 days"],
+    "correctAnswer": 3
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If the ratio of boys to girls in a class is 2:3 and there are 30 girls, how many boys are there?",
+    "answers": ["10 boys", "15 boys", "20 boys", "25 boys"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "What is the next number in the sequence: 1, 3, 6, 10, 15, ...?",
+    "answers": ["18", "21", "24", "28"],
+    "correctAnswer": 3
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If a square has a side length of 5 units, what is its area?",
+    "answers": ["15 square units", "20 square units", "25 square units", "30 square units"],
+    "correctAnswer": 2
+    },
+    {
+    "topic": "Math and Logic Puzzles",
+    "question": "If 6 workers can complete a task in 8 hours, how many workers are needed to complete the task in 4 hours?",
+    "answers": ["3 workers", "6 workers", "9 workers", "12 workers"],
+    "correctAnswer": 1
+    },
+    {
+      "topic": "Movie Trivia",
+      "question": "Who played the character of Iron Man in the Marvel Cinematic Universe?",
+      "answers": ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Tom Hiddleston"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie won the Best Picture award at the 2020 Oscars?",
+      "answers": ["Parasite", "Joker", "1917", "Once Upon a Time in Hollywood"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Shawshank Redemption'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Frank Darabont", "Christopher Nolan"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actor played the character of Jack Sparrow in the 'Pirates of the Caribbean' series?",
+      "answers": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Keira Knightley"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which animated movie features the characters Woody and Buzz Lightyear?",
+      "answers": ["Finding Nemo", "The Lion King", "Toy Story", "Frozen"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Dark Knight'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actress won the Best Actress award for her role in the movie 'La La Land'?",
+      "answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman", "Meryl Streep"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Tony Montana and the famous line 'Say hello to my little friend!'?",
+      "answers": ["Scarface", "The Godfather", "Goodfellas", "Pulp Fiction"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'Inception'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Luke Skywalker and the line 'I am your father'?",
+      "answers": ["Star Wars: A New Hope", "Star Wars: The Empire Strikes Back", "Star Wars: Return of the Jedi", "Star Wars: The Force Awakens"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who won the Best Actor award for his role in the movie 'The Revenant'?",
+      "answers": ["Leonardo DiCaprio", "Brad Pitt", "Joaquin Phoenix", "Tom Hanks"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie is the highest-grossing of all time?",
+      "answers": ["Avengers: Endgame", "Titanic", "Avatar", "Star Wars: The Force Awakens"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'Jurassic Park'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "James Cameron", "Tim Burton"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actor played the character of Neo in 'The Matrix' series?",
+      "answers": ["Keanu Reeves", "Brad Pitt", "Tom Cruise", "Will Smith"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who won the Best Actress award for her role in the movie 'Black Swan'?",
+      "answers": ["Natalie Portman", "Meryl Streep", "Cate Blanchett", "Jennifer Lawrence"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Forrest Gump and the famous line 'Life is like a box of chocolates'?",
+      "answers": ["Forrest Gump", "The Shawshank Redemption", "Good Will Hunting", "Rain Man"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Avengers'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Joss Whedon"],
+      "correctAnswer": 3
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actress won the Best Actress award for her role in the movie 'Silver Linings Playbook'?",
+      "answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman", "Meryl Streep"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Tyler Durden and the line 'The first rule of Fight Club is: You do not talk about Fight Club'?",
+      "answers": ["Fight Club", "The Social Network", "American Psycho", "The Departed"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Shawshank Redemption'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Frank Darabont", "Christopher Nolan"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actor played the character of Jack Sparrow in the 'Pirates of the Caribbean' series?",
+      "answers": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Keira Knightley"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which animated movie features the characters Woody and Buzz Lightyear?",
+      "answers": ["Finding Nemo", "The Lion King", "Toy Story", "Frozen"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Dark Knight'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actress won the Best Actress award for her role in the movie 'La La Land'?",
+      "answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman", "Meryl Streep"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Tony Montana and the famous line 'Say hello to my little friend!'?",
+      "answers": ["Scarface", "The Godfather", "Goodfellas", "Pulp Fiction"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'Inception'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Luke Skywalker and the line 'I am your father'?",
+      "answers": ["Star Wars: A New Hope", "Star Wars: The Empire Strikes Back", "Star Wars: Return of the Jedi", "Star Wars: The Force Awakens"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who won the Best Actor award for his role in the movie 'The Revenant'?",
+      "answers": ["Leonardo DiCaprio", "Brad Pitt", "Joaquin Phoenix", "Tom Hanks"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie is the highest-grossing of all time?",
+      "answers": ["Avengers: Endgame", "Titanic", "Avatar", "Star Wars: The Force Awakens"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'Jurassic Park'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "James Cameron", "Tim Burton"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actor played the character of Neo in 'The Matrix' series?",
+      "answers": ["Keanu Reeves", "Brad Pitt", "Tom Cruise", "Will Smith"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who won the Best Actress award for her role in the movie 'Black Swan'?",
+      "answers": ["Natalie Portman", "Meryl Streep", "Cate Blanchett", "Jennifer Lawrence"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Forrest Gump and the famous line 'Life is like a box of chocolates'?",
+      "answers": ["Forrest Gump", "The Shawshank Redemption", "Good Will Hunting", "Rain Man"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Avengers'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Joss Whedon"],
+      "correctAnswer": 3
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actress won the Best Actress award for her role in the movie 'Silver Linings Playbook'?",
+      "answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman", "Meryl Streep"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Tyler Durden and the line 'The first rule of Fight Club is: You do not talk about Fight Club'?",
+      "answers": ["Fight Club", "The Social Network", "American Psycho", "The Departed"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Shawshank Redemption'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Frank Darabont", "Christopher Nolan"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actor played the character of Jack Sparrow in the 'Pirates of the Caribbean' series?",
+      "answers": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Keira Knightley"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which animated movie features the characters Woody and Buzz Lightyear?",
+      "answers": ["Finding Nemo", "The Lion King", "Toy Story", "Frozen"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'The Dark Knight'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which actress won the Best Actress award for her role in the movie 'La La Land'?",
+      "answers": ["Emma Stone", "Jennifer Lawrence", "Natalie Portman", "Meryl Streep"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Tony Montana and the famous line 'Say hello to my little friend!'?",
+      "answers": ["Scarface", "The Godfather", "Goodfellas", "Pulp Fiction"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who directed the movie 'Inception'?",
+      "answers": ["Martin Scorsese", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": 2
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie features the character Luke Skywalker and the line 'I am your father'?",
+      "answers": ["Star Wars: A New Hope", "Star Wars: The Empire Strikes Back", "Star Wars: Return of the Jedi", "Star Wars: The Force Awakens"],
+      "correctAnswer": 1
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Who won the Best Actor award for his role in the movie 'The Revenant'?",
+      "answers": ["Leonardo DiCaprio", "Brad Pitt", "Joaquin Phoenix", "Tom Hanks"],
+      "correctAnswer": 0
+      },
+      {
+      "topic": "Movie Trivia",
+      "question": "Which movie is the highest-grossing of all time?",
+      "answers": ["Avengers: Endgame", "Titanic", "Avatar", "Star Wars: The Force Awakens"],
+      "correctAnswer": 0
+      },
+      
+{
+  "topic": "General Knowledge",
+  "question": "What is the capital city of France?",
+  "answers": ["Paris", "Madrid", "Rome", "Berlin"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the largest planet in our solar system?",
+  "answers": ["Jupiter", "Saturn", "Earth", "Mars"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who painted the Mona Lisa?",
+  "answers": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Michelangelo"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the chemical symbol for gold?",
+  "answers": ["Go", "Ag", "Au", "Gd"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Which country is known as the Land of the Rising Sun?",
+  "answers": ["China", "Japan", "India", "South Korea"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who wrote the play Romeo and Juliet?",
+  "answers": ["William Shakespeare", "George Orwell", "Jane Austen", "Charles Dickens"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the capital city of Australia?",
+  "answers": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Which planet is known as the Red Planet?",
+  "answers": ["Jupiter", "Saturn", "Mars", "Mercury"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who is the author of the Harry Potter book series?",
+  "answers": ["J.K. Rowling", "Stephen King", "George R.R. Martin", "Dan Brown"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the largest ocean on Earth?",
+  "answers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+  "correctAnswer": 3
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who is the current President of the United States?",
+  "answers": ["Joe Biden", "Barack Obama", "Donald Trump", "George W. Bush"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the world's longest river?",
+  "answers": ["Nile River", "Amazon River", "Mississippi River", "Yangtze River"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Which famous scientist developed the theory of relativity?",
+  "answers": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the largest continent in the world?",
+  "answers": ["Europe", "Asia", "North America", "Africa"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who painted the Sistine Chapel ceiling?",
+  "answers": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Pablo Picasso"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Which country is home to the Great Barrier Reef?",
+  "answers": ["Australia", "Brazil", "Mexico", "Canada"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Who invented the telephone?",
+  "answers": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
+  "correctAnswer": 1
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the chemical symbol for sodium?",
+  "answers": ["S", "So", "Na", "Sa"],
+  "correctAnswer": 2
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "Which famous scientist discovered the law of gravity?",
+  "answers": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
+  "correctAnswer": 0
+  },
+  {
+  "topic": "General Knowledge",
+  "question": "What is the capital city of Brazil?",
+  "answers": ["Sao Paulo", "Brasilia", "Rio de Janeiro", "Salvador"],
+  "correctAnswer": 1
+  }
+
 ]
