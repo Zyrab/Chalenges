@@ -176,7 +176,6 @@ aside button{
 }
 aside{
     padding: 100px;
-    width: 80%;
     background-color: rgb(83, 64, 38);
     background:transparent;
     position: absolute;
@@ -293,7 +292,14 @@ aside{
     transition: all 300ms ease;
 }
 /* result aside styling */
-
+.result{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    padding-top: 10px;
+    z-index: 2;
+}
 .resultContainer{
     width: 100%;
     background:#e0e0e0;
@@ -303,6 +309,12 @@ aside{
     align-items: center;
     justify-content: center;
     border:1px solid #A14667;
+    gap: 25px;
+}
+.resultContainer p {
+    font-size: 40px;
+    font-style: normal;
+    color:#40CBCE;
 }
 .resultCircle{
     width: 350px;
@@ -347,4 +359,35 @@ button:disabled{
     background-color: #999;
     box-shadow: none;
     cursor: not-allowed;
+}
+
+/* footer */
+footer {
+    color: #e6e6dd;
+    background-color: #40CBCE;
+    padding:5px 10% 5px 10%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.logo{
+    height: 40px;
+}
+.logo img {
+    height: 40px
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cpr {
+    text-align: end;
+    margin-top: 20px;
 }

@@ -15,7 +15,7 @@
             var userName = document.getElementById('name')
             var nameDiv = document.getElementById('nameDiv')
             var displayName = document.getElementById('playerName')
-            displayName.innerHTML = userName 
+            displayName.innerHTML = userName.value+' You Scored'
             if ( userName.value ===''){
                 nameDiv.style.background = 'red'
                 userName.style.background = 'red'
