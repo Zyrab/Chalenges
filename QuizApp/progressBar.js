@@ -4,6 +4,7 @@
     const circles = document.querySelectorAll('.circle')
     const progressBar = document.querySelector('.indicator')
     const buttons = document.querySelector('.quizNavigation')
+    const quizRezult = document.getElementById('quizRezult')
     let currentQuestion = 1
     //add click event to buttons
     buttons.addEventListener('click', e =>{
@@ -37,5 +38,14 @@
                 document.getElementById('prev').disabled = true
             }     
             selectingAnswer(currentQuestion)  
-        }
+            // if button id is finish. finishing the quiz and displaying the result
+            if (e.target.id === 'finish'){
+                console.log(selectedAnswers);
+                
+                let sum = selectedAnswers.reduce((accumulator, currentValue) => accumulator + parseInt(currentValue), 0);
+
+                quizRezult.innerText = sum
+                ToggleClassList('result' , 'displayed')
+            }
+        }       
     })

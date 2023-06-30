@@ -1,4 +1,6 @@
 
+      var correctAnswers = [] 
+      var selectedAnswers = [] 
   // this function will create and uppend new question to html
   function displayNewQuestion(){
     fetch('quiz.json')
@@ -20,14 +22,14 @@
         question.classList = 'quizQuestions'
         question.style.display = [`${question.id === '101' ? 'block' : 'none'}`]
         QuestionDiv.appendChild(question)
-        randomiseAnswers (random.answers , question.id)
+        randomiseAnswers (random.answers , question.id , random.answers[random.correctAnswer] )
         displayedQuestions.push(random)
       } else {
         i--
       }
     }
-    selectingAnswer(1)  
-        
+    selectingAnswer(1)        
+    console.log(correctAnswers)
   })
   .catch(error => {
     // Handle any errors that occur during the fetch
@@ -37,7 +39,7 @@
 
 
 
-function randomiseAnswers (answers , id) {
+function randomiseAnswers (answers , id , correctAnswer) {
   var answerDiv = document.getElementById('variants')
   for (let i = answers.length - 1; i >= 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -51,16 +53,22 @@ function randomiseAnswers (answers , id) {
     button.style.display = button.id.slice(0, -1) === '101' ? 'block' : 'none';
     answerDiv.appendChild(button)
   }
+    correctAnswers.push(correctAnswer)
+    
+  }
   
-}
-function selectingAnswer(id) {
-  id = 'v'+id
-  const buttons = document.querySelectorAll(`.${id}`);
+  
+  function selectingAnswer(id) {
+  const buttons = document.querySelectorAll(`.v${id}`);
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('selected'));
-      button.classList.add('selected');
-    });         
-})
+
+      buttons.forEach(btn =>{ btn.classList.remove('selected')
+    })
+    button.classList.add('selected')
+   // selectedAnswers[id-1] = button.textContent
+    selectedAnswers[id-1] = correctAnswers[id-1] === button.textContent ? '1' : '0'
+    })        
+  })
 }
 

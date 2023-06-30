@@ -14,7 +14,8 @@
         if ( eId === 'topicButton' || eId === 'topicContent' || eId === 'topicContentClose'){
             var userName = document.getElementById('name')
             var nameDiv = document.getElementById('nameDiv')
-            
+            var displayName = document.getElementById('playerName')
+            displayName.innerHTML = userName 
             if ( userName.value ===''){
                 nameDiv.style.background = 'red'
                 userName.style.background = 'red'
