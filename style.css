@@ -24,6 +24,15 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.width-100{
+    width: 100%;
+}
 .grid{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
@@ -77,12 +86,32 @@ h1{
     background-color: #fff;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
 }
+.project p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color:  #666666;
+    margin: 12px 0 21px;
+}
+.project a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration-line: underline;
+}
+.project li {
+   gap: 10px;
+}
+p em {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    color:  #42446E;
+    font-style: normal;
+}
 .p-img {
-    position: relative;
-    left: -30px;
     width: 373px;
     height: 260px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 h2 {
     margin: 25px 0 15px 0;
@@ -91,4 +120,10 @@ h2 {
     line-height: 26px;
     text-align: center;
     color: black;
+}
+article{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+    color: #666666;
 }
