@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Russo+One&display=swap');   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    padding: 10%;
+    padding-top: 25px;
+    padding-bottom: 0;
+}
+main {
+    margin: 200px 0 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 47px;
+}
+.logo {
+    height: 60px;
+}
+ul{
+    gap:15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    font-family: 'Montserrat' , sans-serif;
+    text-decoration: none;
+    color: #666666;
+}
+.social-icons{
+    width: 30px;
+}
+.nav-list{
+    gap: 50px;
+}
+.profile{
+    width: 350px;
+    border-radius: 50%;
+}
+.about-me{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    color: #42446E;
+    width: 55%;
+}
+.about-me strong {
+    color: black;
+}
+h1{
+    font-size: 40px;
+    line-height: 26px;
+    font-family: 'Montserrat' , sans-serif;
+    color: #42446E;
+    text-align: center;
+}
+.project{
+    padding: 0px 30px 25px 30px;
+    width: 373px;
+    height: 567px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+.p-img {
+    position: relative;
+    left: -30px;
+    width: 373px;
+    height: 260px;
+    border-radius: 25px 25px 0 0;
+}
+h2 {
+    margin: 25px 0 15px 0;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+    color: black;
+}
