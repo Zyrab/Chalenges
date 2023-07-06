@@ -61,6 +61,8 @@ a{
     gap: 50px;
 }
 .profile{
+    background-image: linear-gradient(to right,#ff9f1a, #ff6b6b);
+    background-clip: padding-box;
     width: 350px;
     border-radius: 50%;
 }
@@ -71,7 +73,10 @@ a{
     width: 55%;
 }
 .about-me strong {
-    color: black;
+    background-image: linear-gradient(to right,#ff9f1a, #ff6b6b);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/WebKit browsers */
+    color: transparent;
 }
 h1{
     font-size: 40px;
@@ -137,7 +142,7 @@ article{
     width: 25px;
     height: 25px;
     margin: 0 5px;
-    background-color: #666666;
+    background: linear-gradient(to right, #ff9f1a, #ff6b6b);
     border-radius: 50%;
     display: inline-block;  
     animation-name:dots;
@@ -169,4 +174,11 @@ footer hr{
 }
 footer .footer-nav{
     margin-bottom: 55px;
+  
+}
+footer .copyrights{
+    background-image: linear-gradient(to right,#ff9f1a, #ff6b6b);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;   
 }
