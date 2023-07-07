@@ -66,10 +66,6 @@ ul{
     height: 0;
     visibility: hidden;
 }
-.dark-mode{
-    background-color: #191919;
-    color: #cccccc;
-}
 a{
     font-family: 'Montserrat' , sans-serif;
     text-decoration: none;
@@ -115,14 +111,6 @@ a{
     -webkit-background-clip: text; /* For Safari/WebKit browsers */
     color: transparent;
 }
-h1{
-    font-size: 40px;
-    line-height: 26px;
-    font-family: 'Montserrat' , sans-serif;
-    color: #42446E;
-    text-align: center;
-    margin-bottom: 140px;
-}
 .project{
     padding: 0px 30px 25px 30px;
     width: 373px;
@@ -145,7 +133,7 @@ h1{
     text-decoration-line: underline;
 }
 .project li {
-   gap: 10px;
+    gap: 10px;
 }
 p em {
     font-family: 'Russo One', sans-serif;
@@ -165,6 +153,25 @@ h2 {
     line-height: 26px;
     text-align: center;
     color: black;
+}
+h1{
+    font-size: 40px;
+    line-height: 26px;
+    font-family: 'Montserrat' , sans-serif;
+    color: #42446E;
+    text-align: center;
+    margin-bottom: 140px;
+    transition: background-color 1s ease, height 1s ease;
+}
+.dark-mode{
+    background-color: #191919;
+}
+.dark-mode-color{
+    color: #cccccc;
+}
+.dark-mode-project{
+    background-color: #363636;
+    color: #cccccc;
 }
 article{
     font-size: 18px;
