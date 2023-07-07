@@ -266,20 +266,21 @@ footer .copyrights{
         font-size: 30px;
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 600px) {
     main{
-        margin: 30px 0px 30px 0px;
-        gap: 60px;
+        margin: 100px 0px 30px 0px;
+        gap: 150px;
     }
     body{
         padding: 15px;
     }
     .about{
         flex-direction: column-reverse;
-        gap: 15px;
+        gap: 50px;
     }
     .about-me {
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 35px;
         width: 80%;
         margin: 0;
     }
@@ -287,15 +288,17 @@ footer .copyrights{
         width: 285px;
     }
     .tech-icon{
-        width: 60px;
+        width: 70px;
     }
     .tech-icons{
-        gap: 20px;
+        gap: 40px;
     }
     .project{
-        padding: 0 10px;
+        padding: 0 10px 10px;
         width: 150px;
         height:280px;
+        gap: 1px;
+        margin-bottom: 150px;
     }
     .p-img{
         width: 150px;
@@ -303,27 +306,27 @@ footer .copyrights{
     }
     h2 {
         font-size:12px;
-        margin: 10px 0 5px;
+        margin: 0;
     }
     article{
         font-size: 9px;
         line-height: 10px;
     }
     .project p {
-        font-size: 9px;
+        font-size: 7px;
         margin: 5px 0 5px;
     }
     .project a {
-        font-size: 10px;
+        font-size: 7px;
     }
     .project li {
        gap: 2px;
     }
     .project li img {
-        width: 15px;
+        width: 10px;
     }
     p em {
-        font-size: 10px;
+        font-size: 8px;
     }
     .logo {
         height: 35px;
@@ -333,6 +336,17 @@ footer .copyrights{
     }
     h1{
         font-size: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
+    }
+    .nav-list{
+        flex-direction: column;
+        gap:10px;
+        font-size: 15px;
+    }
+    .copyrights{
+        font-size: 15px;
+    }
+    footer hr {
+        margin: 20px 0 25px;
     }
 }
