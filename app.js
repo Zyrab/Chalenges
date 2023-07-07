@@ -16,14 +16,21 @@ window.addEventListener("scroll", function() {
   document.querySelector('.mode-bar').addEventListener('click', e => {
     console.log(e.target)
     if (e.target.className === 'mode-toggle-button'){
-      toggleClass('dark' , 'hidden')
-      toggleClass('light' , 'hidden')
-      toggleClass('body' , 'dark-mode')
+      toggleClass('#dark' , 'hidden')
+      toggleClass('#light' , 'hidden')
+      toggleClass('#body' , 'dark-mode')
+      toggleClass('H1','dark-mode-color')
+      toggleClass('H2','dark-mode-color')
+      toggleClass('ARTICLE','dark-mode-color')
+      toggleClass('.project','dark-mode-project')
 
   }
   });
 
 
-  function toggleClass (elemntid, classlist) {
-    document.getElementById(elemntid).classList.toggle(classlist)
-  }
+    function toggleClass(elementSelector, classList) {
+      const elements = document.querySelectorAll(elementSelector);
+      elements.forEach((element) => {
+        element.classList.toggle(classList);
+      });
+    }
