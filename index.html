@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zyrab's Chalenges</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <header class="flex-row">
+    <header class="flex-row" id="header">
        <img src="./Assets/Zyrab-logo/logo-black-no-bckg.png" alt="logo" class="logo">
        <nav class="flex-row">
         <ul class="flex-row nav-list" >
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#4">Contact</a></li>
             <ul class="flex-row">
                 <li><a href="#"><img src="./Assets/social-icons/github-round-logo.png" alt="git" class="social-icons"></a></li>
                 <li><a href="#"><img src="./Assets/social-icons/linkedin-round-logo.png" alt="linkedin" class="social-icons"></a></li>
@@ -24,7 +25,7 @@
        </nav>
     </header>
     <main>
-        <section class="about flex-row">
+        <section class="about flex-row"  id="about">
             <div class="about-me">
                 <p>
                     I am <strong>Zyrab</strong>. Passionate and dedicated web developer. 
@@ -34,7 +35,7 @@
             </div>
             <img src="./Assets/zyrab-profile-pic.png" alt="profile" class="profile">
         </section>
-        <section class="Skills">
+        <section class="Skills" id="skills">
             <h1>Tech Stack</h1>
             <div class="tech-icons flex-wrap">
                <img src="./Assets/trch-icons/icons8-html-480.png" alt="HTML" class="tech-icon">
@@ -52,7 +53,7 @@
                </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h1>Personal Challenges</h1>
             <div class="projects-div flex-wrap">
                 <!-- <div class="project flex-col">
@@ -142,6 +143,7 @@
                 
             </div>
         </section>
+        <a href="#header" class="scroll-up"><img src="./Assets/social-icons/icon-arrow-48.png" alt=""></a>
     </main>
     <footer>
         <div class="links flex-row">
