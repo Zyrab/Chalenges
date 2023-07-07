@@ -214,3 +214,125 @@ footer .copyrights{
     border-radius: 50%;
     border: 2px solid transparent;
 }
+
+
+@media (max-width: 1000px) {
+    .about-me p {
+        font-size: 20px;
+    }
+    .profile {
+        width: 250px;
+    }
+    .tech-icon{
+        width: 100px;
+    }
+    .project{
+        width: 300px;
+        height:480px;
+    }
+    .p-img{
+        width: 300px;
+        height: 200px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    article{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .project p {
+        font-size: 12px;
+    }
+    .project a {
+        font-size: 12px;
+    }
+    .project li {
+       gap: 5px;
+    }
+    .project li img {
+        width: 15px;
+    }
+    p em {
+        font-size: 14px;
+    }
+    .logo {
+        height: 45px;
+    }
+    .social-icons{
+        width: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 750px) {
+    main{
+        margin: 30px 0px 30px 0px;
+        gap: 60px;
+    }
+    body{
+        padding: 15px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .about-me {
+        font-size: 20px;
+        width: 80%;
+        margin: 0;
+    }
+    .profile {
+        width: 285px;
+    }
+    .tech-icon{
+        width: 60px;
+    }
+    .tech-icons{
+        gap: 20px;
+    }
+    .project{
+        padding: 0 10px;
+        width: 150px;
+        height:280px;
+    }
+    .p-img{
+        width: 150px;
+        height: 110px;
+    }
+    h2 {
+        font-size:12px;
+        margin: 10px 0 5px;
+    }
+    article{
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .project p {
+        font-size: 9px;
+        margin: 5px 0 5px;
+    }
+    .project a {
+        font-size: 10px;
+    }
+    .project li {
+       gap: 2px;
+    }
+    .project li img {
+        width: 15px;
+    }
+    p em {
+        font-size: 10px;
+    }
+    .logo {
+        height: 35px;
+    }
+    .social-icons{
+        width: 25px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
