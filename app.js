@@ -14,8 +14,7 @@ window.addEventListener("scroll", function() {
     parentElement.classList.toggle('nav--active');
   });
   document.querySelector('.mode-bar').addEventListener('click', e => {
-    console.log(e.target)
-    if (e.target.className === 'mode-toggle-button'){
+    if (e.target.className === 'mode-toggle-button' || e.target.className.includes('mode-button')){
       toggleClass('#dark' , 'hidden')
       toggleClass('#light' , 'hidden')
       toggleClass('#body' , 'dark-mode')
@@ -23,6 +22,7 @@ window.addEventListener("scroll", function() {
       toggleClass('H2','dark-mode-color')
       toggleClass('ARTICLE','dark-mode-color')
       toggleClass('.project','dark-mode-project')
+      toggleClass('.mode-button','night')
 
   }
   });
