@@ -232,6 +232,49 @@ footer .copyrights{
     border: 2px solid transparent;
 }
 
+/* day night mode // language select */
+.mode-toggle-button{
+    cursor: pointer;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+}
+.mode-toggle-button.hidden{
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}
+.mode-bar{
+    padding: 5px;
+    position: absolute;
+    right: 14.5%;
+    top: 80px;
+    gap: 10px;
+}
+.mode-button{
+    background-color: #fff;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    right: 6px;
+    transition: right 0.5s ease;
+}
+.mode-button.night{
+    right: 34px;    
+}
+.languages{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 5px;
+    font-size: 16px;
+}
+.language{
+    cursor: pointer;
+    padding: 2px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    color: #363636;
+}
 
 @media (max-width: 1000px) {
     .about-me p {
@@ -293,9 +336,6 @@ footer .copyrights{
     }
     body{
         padding: 15px;
-    }
-    .mode-bar{
-        position:static;
     }
     .about{
         flex-direction: column-reverse;
@@ -372,6 +412,7 @@ footer .copyrights{
     footer hr {
         margin: 20px 0 25px;
     }
+
     .nav__icon {
         display:inline-block;
         position: relative;
@@ -466,6 +507,8 @@ footer .copyrights{
             border-radius:0; 
             width: 180px;
             height:200px;
+            background-color: antiquewhite;
+            position: fixed;
         }
         
         nav ul {
@@ -478,6 +521,8 @@ footer .copyrights{
         }
         
         .nav--active .nav__icon {
+            position: fixed;
+            padding-top: 10px;
             background: transparent;
             
             &:before {
@@ -490,51 +535,10 @@ footer .copyrights{
                 transform:rotate(-45deg);
             }
       }
-      /* .mode-bar{
-        
-      } */
+      .mode-bar{
+        top: 18px;
+        height: 12px;
+    }
+   
     }
 
-/* day night mode // language select */
-    .mode-toggle-button{
-        cursor: pointer;
-        opacity: 1;
-        height: auto;
-        visibility: visible;
-    }
-    .mode-toggle-button.hidden{
-        opacity: 0;
-        height: 0;
-        visibility: hidden;
-    }
-    .mode-bar{
-        padding: 5px;
-        position: absolute;
-        right: 15%;
-        top: 80px;
-        gap: 10px;
-    }
-    .mode-button{
-        background-color: #fff;
-        position: absolute;
-        width: 19px;
-        height: 19px;
-        border-radius: 50%;
-        right: 6px;
-        transition: right 0.5s ease;
-    }
-    .mode-button.night{
-        right: 34px;    
-    }
-    .languages{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        gap: 5px;
-        font-size: 16px;
-    }
-    .language{
-        cursor: pointer;
-        padding: 2px;
-        /* border: 1px solid black; */
-        border-radius: 50%;
-        color: #363636;
-    }
