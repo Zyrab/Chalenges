@@ -252,6 +252,7 @@ footer .copyrights{
     gap: 10px;
 }
 .mode-button{
+    cursor: pointer;
     background-color: #fff;
     position: absolute;
     width: 19px;
