@@ -282,4 +282,21 @@ footer {
     text-align: end;
     margin-top: 20px;
 }
-
+/* header */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    gap: 50px;
+}
+.nav-list a:hover{
+    color: #ff9f1a; 
+}
