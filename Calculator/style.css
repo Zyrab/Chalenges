@@ -288,15 +288,15 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-.flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 .nav-list{
-    gap: 50px;
+    gap: 50px;   
 }
 .nav-list a:hover{
-    color: #ff9f1a; 
+    color: #ff9f1a;    
+}
+header {
+    padding: 5px 10% 5px 10%;
+}
+li{
+   list-style-type: none;
 }
