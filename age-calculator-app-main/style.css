@@ -40,7 +40,9 @@ section {
     gap: 4px;
     color: #707070;
     width: 30%; 
+    position: relative;
 }
+
 input {
     border: 1px solid #dcdcdc;
     border-radius: 10px;
@@ -77,11 +79,12 @@ button{
     height: 65px;
     border: none;
 }
+
 button img {
     width: 25px;
 }
 .output{
-height: 180px;
+    height: 180px;
 }
 .output-field{
     align-items: center;
@@ -90,6 +93,7 @@ height: 180px;
     gap: 5px;
 }
 p{
+    
     font-weight: 800;
     font-style: italic;
     letter-spacing: 2px;
@@ -98,4 +102,66 @@ span{
     font-weight: 800;
     font-style: italic;
     color: #824cf8;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #151515;
+}
+@media screen and (min-width: 375px) {
+  
+    body {       
+        font-size: 95px;
+    }
+    section {
+        border-radius:  25px 25px 200px 25px;
+        padding: 52px;
+        width: 755px;
+        height: 590px;
+    }
+    .input{
+        width: 75%;
+        gap: 30px;
+    }
+    input {
+        height: 65px;
+        padding-left: 22px ;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .input-fields {
+        gap: 8px;
+    }
+    .validation {
+        position: absolute;
+        font-weight: 400;
+        letter-spacing: normal;
+        font-style: italic;
+        color: #f0575c;
+        bottom: -20px;
+        opacity: 0;
+    }
+    button{
+        align-self: flex-end;
+        width: 87px;
+        height: 87px;
+        border-radius: 50%;
+    }
+    button img {
+        width: 45px;
+    }
+    hr{
+        height: 3px;
+    }
+    .output-field{
+        height: 100px;
+    }
+    .divider{
+        height: 86px;
+    }
+    .invalid {
+        opacity: 1;
+        color: #f0575c;
+        border: #f0575c;
+    }
+    
 }
