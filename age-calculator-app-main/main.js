@@ -122,28 +122,37 @@ const correctStyling =(element) =>{
 
 calculateAge.addEventListener('click' , e =>{
     var childNodes = ageCalculatorApp.children;
+    var allFieldsValid = true
+
     for ( i = 0; i < childNodes.length; i++) {
         var children = childNodes[i].children
         for ( j = 0; j < children.length; j++) {
-            if (children[j].value!== undefined && children[j].value==='' ){
-                errorStyling2 (children[j])
-            }   else    {
-            var spanYear = document.getElementById('year-result')
-            var spanMonth = document.getElementById('month-result')
-            var spanDay = document.getElementById('day-result')
-            var monthDays = getMaxDaysInMonth (yearV,monthV)
-                
-            var monthFormat = month < monthV ||( month == monthV && day < dayV) ? month - monthV + 12 : month - monthV;
-                
-       
-            spanYear.innerText = month  < monthV || ( month == monthV  && dayV > day) ? year - yearV - 1 : year - yearV;
-            spanMonth.innerText = day < dayV ? monthFormat - 1 : monthFormat;
-            console.log(monthDays)
-            spanDay.innerText = day < dayV ? day + (monthDays - dayV) : day-dayV;
+            if (children[j].classList.contains('invalid')){
+                errorStyling(children[j])
+                allFieldsValid = false
             }
-    
+            if ((children[j].value!== undefined && children[j].value==='' ) || children[j].value===''){
+                errorStyling2 (children[j])
+                allFieldsValid = false
+            }
+
+            
         } 
         
     } 
+    if (allFieldsValid){
+    var spanYear = document.getElementById('year-result')
+    var spanMonth = document.getElementById('month-result')
+    var spanDay = document.getElementById('day-result')
+    var monthDays = getMaxDaysInMonth (yearV,monthV)
+        
+    var monthFormat = month < monthV ||( month == monthV && day < dayV) ? month - monthV + 12 : month - monthV;
+        
+
+    spanYear.innerText = month  < monthV || ( month == monthV  && dayV > day) ? year - yearV - 1 : year - yearV;
+    spanMonth.innerText = day < dayV ? monthFormat - 1 : monthFormat;
+    console.log(monthDays)
+    spanDay.innerText = day < dayV ? day + (monthDays - dayV) : day-dayV;
+    }
 
 })
