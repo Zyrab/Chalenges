@@ -23,7 +23,7 @@ main{
 section {
     background-color: #ffffff;
     border-radius:  20px 20px 85px 20px;
-    padding: 48px 25px;
+    padding: 48px 20px ;
     width: 345px;
     height: 485px;
 }
@@ -50,6 +50,7 @@ input {
     padding-left: 15px ;
     font-weight: 800;
     font-size: 20px;
+    caret-color: #824cf8;
 }
 input::placeholder{
     font-weight: bold;
@@ -107,7 +108,17 @@ button:hover {
     cursor: pointer;
     background-color: #151515;
 }
-@media screen and (min-width: 375px) {
+.validation {
+    position: absolute;
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: normal;
+    font-style: italic;
+    color: #f0575c;
+    bottom: -20px;
+    opacity: 0;
+}
+@media screen and (min-width: 760px) {
   
     body {       
         font-size: 95px;
@@ -131,15 +142,7 @@ button:hover {
     .input-fields {
         gap: 8px;
     }
-    .validation {
-        position: absolute;
-        font-weight: 400;
-        letter-spacing: normal;
-        font-style: italic;
-        color: #f0575c;
-        bottom: -20px;
-        opacity: 0;
-    }
+ 
     button{
         align-self: flex-end;
         width: 87px;
@@ -158,10 +161,14 @@ button:hover {
     .divider{
         height: 86px;
     }
-    .invalid {
-        opacity: 1;
-        color: #f0575c;
-        border: #f0575c;
+    .validation{
+        font-size: 12px;
     }
-    
 }
+    .invalid{
+        border: 1px solid #f0575c;
+        caret-color: #f0575c;
+    }
+    .error{
+        color: #f0575c;
+    }
