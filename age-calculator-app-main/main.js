@@ -86,16 +86,6 @@ function isLeapYear(yearV) {
     return (yearV % 4 === 0 && yearV % 100 !== 0) || (yearV % 400 === 0);
 }
 
-
-
-
-
-
-
-
-
-
-
 const errorStyling =(element) =>{
     var validNumber = element.id + '1'
     var isRequired = element.id + '2'
@@ -137,8 +127,19 @@ calculateAge.addEventListener('click' , e =>{
         for ( j = 0; j < children.length; j++) {
             if (children[j].value!== undefined && children[j].value==='' ){
                 errorStyling2 (children[j])
-            }else{
-
+            }   else    {
+            var spanYear = document.getElementById('year-result')
+            var spanMonth = document.getElementById('month-result')
+            var spanDay = document.getElementById('day-result')
+            var monthDays = getMaxDaysInMonth (yearV,monthV)
+                
+            var monthFormat = month < monthV ||( month == monthV && day < dayV) ? month - monthV + 12 : month - monthV;
+                
+       
+            spanYear.innerText = month  < monthV || ( month == monthV  && dayV > day) ? year - yearV - 1 : year - yearV;
+            spanMonth.innerText = day < dayV ? monthFormat - 1 : monthFormat;
+            console.log(monthDays)
+            spanDay.innerText = day < dayV ? day + (monthDays - dayV) : day-dayV;
             }
     
         } 
