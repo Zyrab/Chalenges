@@ -77,7 +77,11 @@ const getMaxDaysInMonth = (yearV, monthV) => {
 
     // Check if it's February (month 2) and a leap year, or if monthV is undefined
     if (monthV == 2 && isLeapYear(yearV)) {
-        return 29; // February in a leap year or when monthV is undefined
+        return 29; // February in a leap year 
+    }
+    //if month isnt enterd yet
+    if (monthV === undefined) {
+        return 31 ;
     }
     // Handle other months
     if (monthV >= 1 && monthV <= 12) {
