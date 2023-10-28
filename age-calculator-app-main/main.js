@@ -26,36 +26,28 @@ const validDate = (element, value) => {
 
     if (id === "year") {
         yearV = value;
-        if (
-            yearV > year ||
-            (yearV == year && monthV > month) ||
-            (yearV == year && monthV == month && dayV > day) ||
-            !onlyNumbers.test(yearV.trim())
-        ) {
-            errorStyling(element);
+        if ( yearV > year || (yearV == year && monthV > month) ||(yearV == year && monthV == month && dayV > day) || !onlyNumbers.test(yearV.trim())) {
+            styling (element, '#f0575c', 1 , 0);
         } else {
-            correctStyling(element);
+            styling (element, '#707070', 0 , 0);
             if (dayV > getMaxDaysInMonth(yearV, monthV) || !onlyNumbers.test(dayV.trim())) {
-                errorStyling(dayId);
+                styling (dayId, '#f0575c', 1 , 0);
             } else {
-                correctStyling(dayId);
+                styling (dayId, '#707070', 0 , 0);
             }
         }
     }
     if (element.id === 'month') {
         monthV = value;
-        if (
-            monthV < 1 ||
-            monthV > 12 ||
-            !onlyNumbers.test(monthV.trim())
+        if ( monthV < 1 || monthV > 12 || !onlyNumbers.test(monthV.trim())
         ) {
-            errorStyling(element);
+            styling (element, '#f0575c', 1 , 0);
         } else {
-            correctStyling(element);
+            styling (element, '#707070', 0 , 0);
             if (dayV > getMaxDaysInMonth(yearV, monthV) || !onlyNumbers.test(dayV.trim())) {
-                errorStyling(dayId);
+                styling (dayId, '#f0575c', 1 , 0);
             } else {
-                correctStyling(dayId);
+                styling (dayId, '#707070', 0 , 0);
             }
         }
     }
@@ -63,9 +55,9 @@ const validDate = (element, value) => {
         dayV = value;
         dayId = element;
         if (!onlyNumbers.test(value.trim()) || dayV > getMaxDaysInMonth(yearV, monthV)) {
-            errorStyling(element);
+            styling (element, '#f0575c', 1 , 0);
         } else {
-            correctStyling(element);
+            styling (element, '#707070', 0 , 0);
         }
     }
 };
@@ -102,44 +94,20 @@ function isLeapYear(yearV) {
     return (yearV % 4 === 0 && yearV % 100 !== 0) || (yearV % 400 === 0);
 }
 
-// Function to apply error styling to an element
-const errorStyling = (element) => {
-    var validNumber = element.id + '1';
-    var isRequired = element.id + '2';
-    var mustBeValidNumber = document.getElementById(validNumber);
-    var fieldIsRequired = document.getElementById(isRequired);
 
-    element.classList.add('invalid');
-    element.labels.item(0).style.color = '#f0575c';
-    mustBeValidNumber.style.opacity = '1';
-    fieldIsRequired.style.opacity = '0';
-};
-
-// Function to apply error styling for a required field
-const errorStyling2 = (element) => {
-    var validNumber = element.id + '1';
-    var isRequired = element.id + '2';
-    var mustBeValidNumber = document.getElementById(validNumber);
-    var fieldIsRequired = document.getElementById(isRequired);
-
-    element.classList.add('invalid');
-    element.labels.item(0).style.color = '#f0575c';
-    mustBeValidNumber.style.opacity = '0';
-    fieldIsRequired.style.opacity = '1';
-};
-
-// Function to apply correct styling to an element
-const correctStyling = (element) => {
+// Function to apply error styling for a field
+const styling = (element , color, op1, op2 ) => {
     var validNumber = element.id + '1';
     var isRequired = element.id + '2';
     var mustBeValidNumber = document.getElementById(validNumber);
     var fieldIsRequired = document.getElementById(isRequired);
 
     element.classList.remove('invalid');
-    element.labels.item(0).style.color = '#707070';
-    mustBeValidNumber.style.opacity = '0';
-    fieldIsRequired.style.opacity = '0';
+    element.labels.item(0).style.color = color;
+    mustBeValidNumber.style.opacity = op1;
+    fieldIsRequired.style.opacity = op2;
 };
+
 
 // Add a click event listener to the "Calculate Age" button
 calculateAge.addEventListener('click', (e) => {
@@ -150,11 +118,11 @@ calculateAge.addEventListener('click', (e) => {
         var children = childNodes[i].children;
         for (j = 0; j < children.length; j++) {
             if (children[j].classList.contains('invalid')) {
-                errorStyling(children[j]);
-                allFieldsValid = false;
+               styling (children[j], '#f0575c', 1 , 0);
+               allFieldsValid = false;
             }
             if ((children[j].value !== undefined && children[j].value === '') || children[j].value === '') {
-                errorStyling2(children[j]);
+                styling (children[j], '#f0575c', 0 , 1);
                 allFieldsValid = false;
             }
         }
@@ -184,3 +152,9 @@ const countAnimation = (target, id) => {
     };
     incrementNumber();
 };
+
+
+
+
+
+
