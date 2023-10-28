@@ -7,103 +7,103 @@ const currentDate = new Date();
 const year = currentDate.getFullYear();
 const month = currentDate.getMonth() + 1; // Month is 0-based, so add 1
 const day = currentDate.getDate();
-var yearV; // Variable to store the year input
-var monthV; // Variable to store the month input
-var dayV; // Variable to store the day input
-var dayId; // Element for the day input
+var inputYear; // Variable to store the year input
+var inputMonth; // Variable to store the month input
+var inputDay; // Variable to store the day input
+var inputDayId; // Element for the day input
 
 // Event listener to validate input areas when a key is released
 ageCalculatorApp.addEventListener('keyup', (e) => {
     var element = e.target;
     var inputText = e.target.value;
-    validDate(element, inputText);
+    handleInput(element, inputText)
 });
 
 // Function to validate date inputs
-const validDate = (element, value) => {
+const handleInput = (element, value) => {
     id = element.id;
     onlyNumbers = /^\d+$/;
 
     if (id === "year") {
-        yearV = value;
-        if ( yearV > year || (yearV == year && monthV > month) ||(yearV == year && monthV == month && dayV > day) || !onlyNumbers.test(yearV.trim())) {
-            styling (element, '#f0575c', 1 , 0);
+        inputYear = value;
+        if ( inputYear > year || (inputYear == year && inputMonth > month) ||(inputYear == year && inputMonth == month && inputDay > day) || !onlyNumbers.test(inputYear.trim())) {
+            validation (element, 1 , 0 , 1);
         } else {
-            styling (element, '#707070', 0 , 0);
-            if (dayV > getMaxDaysInMonth(yearV, monthV) || !onlyNumbers.test(dayV.trim())) {
-                styling (dayId, '#f0575c', 1 , 0);
+            validation (element, 0 , 0 , 2);
+            if (inputDay > getMaxDaysInMonth(inputYear, inputMonth) || !onlyNumbers.test(inputDay.trim())) {
+                validation (inputDayId, 1 , 0, 1);
             } else {
-                styling (dayId, '#707070', 0 , 0);
+                validation (inputDayId, 0 , 0 , 2);
             }
         }
     }
     if (element.id === 'month') {
-        monthV = value;
-        if ( monthV < 1 || monthV > 12 || !onlyNumbers.test(monthV.trim())
+        inputMonth = value;
+        if ( inputMonth < 1 || inputMonth > 12 || !onlyNumbers.test(inputMonth.trim())
         ) {
-            styling (element, '#f0575c', 1 , 0);
+            validation (element, 1 , 0 , 1);
         } else {
-            styling (element, '#707070', 0 , 0);
-            if (dayV > getMaxDaysInMonth(yearV, monthV) || !onlyNumbers.test(dayV.trim())) {
-                styling (dayId, '#f0575c', 1 , 0);
+            validation (element, 0 , 0 , 2);
+            if (inputDay > getMaxDaysInMonth(inputYear, inputMonth) || !onlyNumbers.test(inputDay.trim())) {
+                validation (inputDayId, 1 , 0 , 1);
             } else {
-                styling (dayId, '#707070', 0 , 0);
+                validation (inputDayId, 0 , 0 , 2);
             }
         }
     }
     if (id === 'day') {
-        dayV = value;
-        dayId = element;
-        if (!onlyNumbers.test(value.trim()) || dayV > getMaxDaysInMonth(yearV, monthV)) {
-            styling (element, '#f0575c', 1 , 0);
+        inputDay = value;
+        inputDayId = element;
+        if (!onlyNumbers.test(value.trim()) ||inputDay > getMaxDaysInMonth(inputYear, inputMonth)) {
+            validation (element, 1 , 0, 1);
         } else {
-            styling (element, '#707070', 0 , 0);
+            validation (element, 0 , 0 , 2);
         }
     }
 };
 
+
 // Function to get the maximum number of days in a month
-const getMaxDaysInMonth = (yearV, monthV) => {
+const getMaxDaysInMonth = (inputYear, inputMonth) => {
     // Array to store the number of days in each month (accounting for leap years)
     const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-    // Check if it's February (month 2) and a leap year, or if monthV is undefined
-    if (monthV == 2 && isLeapYear(yearV)) {
+    // Check if it's February (month 2) and a leap year, or if inputMonth is undefined
+    if (inputMonth == 2 && isLeapYear(inputYear)) {
         return 29; // February in a leap year 
     }
     //if month isnt enterd yet
-    if (monthV === undefined) {
+    if (inputMonth === undefined) {
         return 31 ;
     }
     // Handle other months
-    if (monthV >= 1 && monthV <= 12) {
-        return daysInMonth[monthV - 1]; // Subtract 1 since months are 0-based in the array
+    if (inputMonth >= 1 && inputMonth <= 12) {
+        return daysInMonth[inputMonth - 1]; // Subtract 1 since months are 0-based in the array
     }
     return 0; // Return 0 for invalid months
 };
 
 // Function to check if a year is a leap year
-function isLeapYear(yearV) {
-    if (yearV === '' || isNaN(yearV)) {
+function isLeapYear(inputYear) {
+    if (inputYear === '' || isNaN(inputYear)) {
         return false; // An empty or non-numeric year is not a leap year
     }
 
-    yearV = parseInt(yearV); // Convert yearV to an integer for numeric comparison
+    inputYear = parseInt(inputYear); // Convert inputYear to an integer for numeric comparison
 
     // Check for leap years (divisible by 4, except for years divisible by 100 but not by 400)
-    return (yearV % 4 === 0 && yearV % 100 !== 0) || (yearV % 400 === 0);
+    return (inputYear % 4 === 0 && inputYear % 100 !== 0) || (inputYear % 400 === 0);
 }
 
 
-// Function to apply error styling for a field
-const styling = (element , color, op1, op2 ) => {
+// Function to apply error validation for a field
+const validation = (element , op1, op2,classBehave ) => {
     var validNumber = element.id + '1';
     var isRequired = element.id + '2';
     var mustBeValidNumber = document.getElementById(validNumber);
     var fieldIsRequired = document.getElementById(isRequired);
-
-    element.classList.remove('invalid');
-    element.labels.item(0).style.color = color;
+    element.classList[`${classBehave === 1 ? 'add' : 'remove'}`]('invalid')
+    element.labels.item(0).style.color = `${classBehave === 1 ? '#f0575c' : '#707070'}`;
     mustBeValidNumber.style.opacity = op1;
     fieldIsRequired.style.opacity = op2;
 };
@@ -118,21 +118,21 @@ calculateAge.addEventListener('click', (e) => {
         var children = childNodes[i].children;
         for (j = 0; j < children.length; j++) {
             if (children[j].classList.contains('invalid')) {
-               styling (children[j], '#f0575c', 1 , 0);
+               validation (children[j], 1 , 0, 1);
                allFieldsValid = false;
             }
             if ((children[j].value !== undefined && children[j].value === '') || children[j].value === '') {
-                styling (children[j], '#f0575c', 0 , 1);
+                validation (children[j], 0 , 1, 1);
                 allFieldsValid = false;
             }
         }
     }
     if (allFieldsValid) {
-        var monthDays = getMaxDaysInMonth(yearV, monthV);
-        var monthFormat = month < monthV || (month == monthV && day < dayV) ? month - monthV + 12 : month - monthV;
-        var spanYear = month < monthV || (month == monthV && dayV > day) ? year - yearV - 1 : year - yearV;
-        var spanMonth = day < dayV ? monthFormat - 1 : monthFormat;
-        var spanDay = day < dayV ? day + (monthDays - dayV) : day - dayV;
+        var monthDays = getMaxDaysInMonth(inputYear, inputMonth);
+        var monthFormat = month < inputMonth || (month == inputMonth && day < inputDay) ? month - inputMonth + 12 : month - inputMonth;
+        var spanYear = month < inputMonth || (month == inputMonth && inputDay > day) ? year - inputYear - 1 : year - inputYear;
+        var spanMonth = day < inputDay ? monthFormat - 1 : monthFormat;
+        var spanDay = day < inputDay ? day + (monthDays - inputDay) : day - inputDay;
 
         countAnimation(spanYear, 'year-result');
         countAnimation(spanMonth, 'month-result');
@@ -142,11 +142,11 @@ calculateAge.addEventListener('click', (e) => {
 
 // Function for the counting animation
 const countAnimation = (target, id) => {
-    var currentnumber = target > 31 ? target - 31 : 0;
+    var currentNumber = target > 31 ? target - 31 : 0;
     const incrementNumber = () => {
-        if (currentnumber <= target) {
-            document.getElementById(id).textContent = currentnumber;
-            currentnumber++;
+        if (currentNumber <= target) {
+            document.getElementById(id).textContent = currentNumber;
+            currentNumber++;
             setTimeout(incrementNumber, 30);
         }
     };
