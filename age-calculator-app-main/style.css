@@ -120,7 +120,8 @@ button:hover {
 }
 .attribution{
     font-size: 8px;
-    text-align: end;
+    position: absolute;
+    bottom: 0;
     
 }
 h2{
