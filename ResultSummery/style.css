@@ -54,9 +54,10 @@ h3 {
 .resultDiv p {
     color: hsl(241, 100%, 89%);
     font-size: 15px;
+    text-align: center;
 }
 .summeryDiv {
-    margin:30px;
+    padding:30px;
 }
 h4 {
     font-size: 18px;
@@ -118,5 +119,50 @@ button {
 @media screen  and (min-width:650px){
     main {
         flex-direction: row;
+        height: 512px;
+        width:736px  ;
+        border-radius: 25px;
+        box-shadow: 15px 15px 20px -3px #f4f7fe ;
+    }
+    .resultDiv, .summeryDiv{
+        width: 50%;
+        border-radius: 25px;
+        height:100% ;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .scoreDiv {
+        height: 200px;
+        width: 200px;
+    }
+    h2 {
+        font-size: 72px;
+    }
+    .scoreDiv p {
+        font-size:18px ;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .resultDiv p {
+        font-size: 17px;
+    }
+    .componentsDiv {
+        font-size: 18px;
+    }
+    .component {
+        gap: 15px;
+    }
+    button{
+        margin-top: 25px;
+    }
+    button:hover {
+        background:linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    }
+    h4 {
+        font-size: 24px;
+        margin-top:15px;
+        margin-bottom:30px;
     }
 }
