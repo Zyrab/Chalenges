@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
   <title>Result Summery</title>
 </head>
 <body>
@@ -21,42 +22,42 @@
     <div class="summeryDiv">
       <h4>Summery</h4>
       <div class="wrapper">
-        <div class="componentsDiv Light-red">
+        <div class="componentsDiv reactionColor">
           <div class="component">
-            <img src="./images/icon-reaction.svg" alt="">
+            <img src="./images/icon-reaction.svg" alt="reaction">
             <p>Reaction</p>
           </div>
-          <p class="progres"><span>80</span> / 100</p>
+          <p class="progress"><span id="reaction">80</span> / 100</p>
         </div>
       </div>
         <div class="wrapper">
-          <div class="componentsDiv Orangey-yellow">
+          <div class="componentsDiv memoryColor">
             <div class="component">
-              <img src="./images/icon-memory.svg" alt="">
+              <img src="./images/icon-memory.svg" alt="memory">
               <p>Memory</p>
             </div>
-            <p class="progres"> <span>92</span> / 100</p>
+            <p class="progress"> <span id="memory">92</span> / 100</p>
           </div>
         </div>
         <div class="wrapper">
-          <div class="componentsDiv Green-teal">
+          <div class="componentsDiv verbalColor">
             <div class="component">
-              <img src="./images/icon-verbal.svg" alt="">
+              <img src="./images/icon-verbal.svg" alt="verbal">
               <p>Verbal</p>
             </div>
-            <p class="progres"><span>61</span> / 100</p>
+            <p class="progress"><span id="verbal">61</span> / 100</p>
           </div>
         </div>
         <div class="wrapper">
-          <div class="componentsDiv Cobalt-blue">
+          <div class="componentsDiv visualColor">
             <div class="component">
-              <img src="./images/icon-visual.svg" alt="">
+              <img src="./images/icon-visual.svg" alt="visual">
               <p>Visual</p>
             </div>
-            <p class="progres"><span>72</span> / 100</p>
+            <p class="progress"><span id="visual">72</span> / 100</p>
           </div>
         </div>       
-        <button><p>Continue</p></button>
+        <button type="button" id="button">Continue</button>
     </div>
   </main>
 </body>

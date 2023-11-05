@@ -81,23 +81,23 @@ h4 {
     display: flex;
     gap: 13px;
 }
-.Light-red{
+.reactionColor{
     color:hsl(0, 100%, 67%) ;
     background-color:#fff6f5 ;
 }
-.Orangey-yellow {
+.memoryColor{
     color:hsl(39, 100%, 56%) ;
     background-color:#fffbf2;
 }
-.Green-teal {
+.verbalColor {
     color: hsl(166, 100%, 37%);
     background-color: #f2fbfa;
 }
-.Cobalt-blue {
+.visualColor {
     color: hsl(234, 85%, 45%);
     background-color:#f3f3fd;
 }
-.progres {
+.progress {
     color: #959fa1;
 }
 .wrapper span {
@@ -114,6 +114,9 @@ button {
     border-radius: 50px;
     font-size: 18px;
     font-weight: 400;
+}
+button:hover {
+    background:linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
 }
 
 @media screen  and (min-width:650px){
@@ -157,9 +160,7 @@ button {
     button{
         margin-top: 25px;
     }
-    button:hover {
-        background:linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
-    }
+    
     h4 {
         font-size: 24px;
         margin-top:15px;
