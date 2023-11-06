@@ -114,9 +114,14 @@ button {
     border-radius: 50px;
     font-size: 18px;
     font-weight: 400;
+    justify-items: end;
 }
 button:hover {
     background:linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+}
+.resultSummeryDiv{
+    width: 100%;
+    height: 265px;
 }
 
 @media screen  and (min-width:650px){
